@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Intersection {
+struct AssignmentDisplay {
 //    code here
     
 }
