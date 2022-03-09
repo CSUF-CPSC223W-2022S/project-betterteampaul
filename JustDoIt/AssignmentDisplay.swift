@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct AssignmentDisplay {
-//    code here
-    
+public class AssignmentDisplay {
+//  AssignmentDisplay will be in charge of handling the logic for
+    public func display() {
+        print("TEST")
+    }
 }
