@@ -14,7 +14,7 @@ struct Assignment {
 //        dueDate = ""
 //
 //    }
-    init (_assignmentName: String, _assignmentDetails: String?, _dueDate: String, _assigmentLink: String? ) {
+    init (_assignmentName: String, _dueDate: String, _assignmentDetails: String?, _assigmentLink: String? ) {
         assignmentName = _assignmentName
         assignmentDetails = _assignmentDetails
         assignmentLink = _assigmentLink
@@ -25,7 +25,7 @@ struct Assignment {
         return assignmentName
     }
     
-    func getDueDate() -> String? {
+    func getDueDate() -> String {
         return dueDate
     }
     func getAssignmentDetails() -> String? {
@@ -36,8 +36,8 @@ struct Assignment {
     }
 //    Assignments should always have a name, and
     var assignmentName: String
-    var assignmentDetails: String?
     var dueDate: String
+    var assignmentDetails: String?
     var assignmentLink: String?
 }
 

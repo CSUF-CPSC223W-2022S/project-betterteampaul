@@ -16,46 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bVD-Pu-tsV">
-                                <rect key="frame" x="97" y="708" width="220" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLF-JO-cTx">
+                                <rect key="frame" x="107" y="393" width="202" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65u-hG-gFX">
-                                        <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Edit" titleAlignment="center"/>
-                                        <connections>
-                                            <action selector="assignmentEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwU-7i-uv8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1q-CF-75X">
-                                        <rect key="frame" x="57" y="0.0" width="49" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+" titleAlignment="center"/>
-                                        <connections>
-                                            <action selector="newAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Js-B6-odh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-Kp-QDg">
-                                        <rect key="frame" x="114" y="0.0" width="49" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="-" titleAlignment="center"/>
-                                        <connections>
-                                            <action selector="removeAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx0-kJ-AGk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QJ-67-NhL">
-                                        <rect key="frame" x="171" y="0.0" width="49" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Info" titleAlignment="center"/>
-                                        <connections>
-                                            <action selector="assignmentInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dl-p8-xMz"/>
-                                        </connections>
-                                    </button>
+                                    <stackView contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bVD-Pu-tsV">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65u-hG-gFX">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Edit" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="assignmentEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwU-7i-uv8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1q-CF-75X">
+                                                <rect key="frame" x="51" y="0.0" width="49" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="newAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Js-B6-odh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-Kp-QDg">
+                                                <rect key="frame" x="102" y="0.0" width="49" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="removeAssignment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx0-kJ-AGk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QJ-67-NhL">
+                                                <rect key="frame" x="153" y="0.0" width="49" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Info" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="assignmentInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dl-p8-xMz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1MH-af-Bv6">
-                                <rect key="frame" x="61" y="79" width="311" height="630"/>
+                                <rect key="frame" x="107" y="211" width="334" height="701"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
