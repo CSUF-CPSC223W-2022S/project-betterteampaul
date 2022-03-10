@@ -13,7 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
 
-
+    @IBAction func datepick(_ sender: Any) {
+    }
+    
+    
+    @IBOutlet weak var load: UIActivityIndicatorView!
+    
 }
 

@@ -15,7 +15,7 @@ struct calendar{
     var assignment: String
 }
 
-struct month {
+struct Month {
     var month: Int
     init(){
         month = 1
@@ -61,7 +61,7 @@ struct month {
     }
 }
 
-struct days{
+struct Days{
     var days: Int
     init(){
         days = 1

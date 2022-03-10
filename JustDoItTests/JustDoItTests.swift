@@ -32,5 +32,58 @@ class JustDoItTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testmonth1(){
+        let monthobj = Month(1)
+        XCTAssertEqual(monthobj.name, "January")
+    }
+    func testmonth2(){
+        let monthobj = Month(2)
+        XCTAssertEqual(monthobj.name, "February")
+    }
+    func testmonth3(){
+        let monthobj = Month(3)
+        XCTAssertEqual(monthobj.name, "March")
+    }
+    func testmonth4(){
+        let monthobj = Month(4)
+        XCTAssertEqual(monthobj.name, "April")
+    }
+    func testmonth5(){
+        let monthobj = Month(5)
+        XCTAssertEqual(monthobj.name, "May")
+    }
+    func testmonth6(){
+        let monthobj = Month(6)
+        XCTAssertEqual(monthobj.name, "June")
+    }
+    func testmonth7(){
+        let monthobj = Month(7)
+        XCTAssertEqual(monthobj.name, "July")
+    }
+    func testmonth8(){
+        let monthobj = Month(8)
+        XCTAssertEqual(monthobj.name, "August")
+    }
+    func testmonth9(){
+        let monthobj = Month(9)
+        XCTAssertEqual(monthobj.name, "September")
+    }
+    func testmonth10(){
+        let monthobj = Month(10)
+        XCTAssertEqual(monthobj.name, "October")
+    }
+    func testmonth11(){
+        let monthobj = Month(11)
+        XCTAssertEqual(monthobj.name, "November")
+    }
+    func testmonth12(){
+        let monthobj = Month(12)
+        XCTAssertEqual(monthobj.name, "December")
+    }
+    func testdays(){
+        let dayobj = Days(-3)
+        XCTAssertEqual(dayobj.days, 1)
+    }
 
 }
