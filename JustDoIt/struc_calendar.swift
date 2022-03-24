@@ -8,11 +8,12 @@
 import Foundation
 
 struct calendar{
-    var day: Int
-    var week: Int
-    var month: Int
-    var year: Int
-    var assignment: String
+    var dates: String
+    //var assignment: String
+    init(_ dates: String){
+        self.dates = dates
+       // self.assignment = assignment
+    }
 }
 
 struct Month {
