@@ -40,6 +40,7 @@ class NotificationSetting: UIViewController {
         //else the switch is turned off we updat ethe boolen and text to represent an off state
             message.notificationsIsOn = false
             NotificationStateLabel.text = "Notifications Off"
+            message.pushMessage = ""
         }
         
     }

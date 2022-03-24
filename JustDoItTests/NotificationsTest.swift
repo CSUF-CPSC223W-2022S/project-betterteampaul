@@ -53,10 +53,12 @@ class NotificationsTest: XCTestCase {
         let index = notifObject.appendAssignmentToMessage()
         let message = notifObject.pushNotification()
         XCTAssertTrue(message.contains(notifObject.dataBaseOfAssignments[index]))
-        
-        
-        
-        
+    }
+    
+    //assert that notifications are turned on at the creation of the object
+    func testNotificationsBeginOn() {
+        let notifObject = Notifications()
+        XCTAssertTrue(notifObject.notificationsIsOn)
     }
   
 
