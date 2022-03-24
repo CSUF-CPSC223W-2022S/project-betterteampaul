@@ -13,10 +13,7 @@ var testCheck: String = "student"
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
    
     var loginObj = LoginPage(email: testEmail, password: testPassword)
 

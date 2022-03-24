@@ -19,5 +19,8 @@ class LoginPageTests: XCTestCase {
         let myEmail = LoginPage(email: "studentemail@csu.fullerton.edu", password:"");
         XCTAssertEqual("studentemail@csu.fullerton.edu",myEmail.email);
        }
+    func testMovePages() {
+        
+    }
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
 		49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
-		49F5AD6F27E8314400438AD7 /* LoginPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F5AD6E27E8314400438AD7 /* LoginPageStoryboard.storyboard */; };
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
 		9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */; };
 		9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		49737E5627C47CE80053CC29 /* login_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_page.swift; sourceTree = "<group>"; };
 		49B0710227D9DD6B00EA930C /* LoginPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageTests.swift; sourceTree = "<group>"; };
-		49F5AD6E27E8314400438AD7 /* LoginPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPageStoryboard.storyboard; sourceTree = "<group>"; };
 		9D9FABD627C43A4600D911A4 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABD927C43A4600D911A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */,
 				9D9FABDD27C43A4600D911A4 /* ViewController.swift */,
 				9D9FABDF27C43A4600D911A4 /* Main.storyboard */,
-				49F5AD6E27E8314400438AD7 /* LoginPageStoryboard.storyboard */,
 				9D9FABE227C43A4800D911A4 /* Assets.xcassets */,
 				9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */,
 				9D9FABE727C43A4800D911A4 /* Info.plist */,
@@ -245,7 +242,6 @@
 			files = (
 				9D9FAC0C27C43C2600D911A4 /* .gitignore in Resources */,
 				9D9FABE627C43A4800D911A4 /* LaunchScreen.storyboard in Resources */,
-				49F5AD6F27E8314400438AD7 /* LoginPageStoryboard.storyboard in Resources */,
 				9D9FABE327C43A4800D911A4 /* Assets.xcassets in Resources */,
 				9D9FABE127C43A4600D911A4 /* Main.storyboard in Resources */,
 			);

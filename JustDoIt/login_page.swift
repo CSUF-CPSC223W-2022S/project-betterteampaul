@@ -13,10 +13,7 @@ struct LoginPage {
     var email: String;
     var password: String;
     
-    
-    //    There’s some text before the @
-    //    There’s some text after the @
-    //    There’s at least 2 alpha characters after a .
+   //initilizer
     init(email: String, password:String){
         self.email = email;
         self.password = password;
@@ -27,17 +24,20 @@ struct LoginPage {
         
         guard email != nil else { return false }
         
+        //    There’s some text before the @
+        //    There’s some text after the @
+        //    There’s at least 2 alpha characters after a .
         let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         
         let pred = NSPredicate(format:"SELF MATCHES %@", regEx)
         return pred.evaluate(with: email)
     }
     
+    
     //    There’s at least one uppercase letter
     //    There’s at least one lowercase letter
     //    There’s at least one numeric digit
     //    The text is at least 8 characters long
-    
     func isValidPassword(password:String?) -> Bool {
         guard password != nil else { return false }
 
@@ -49,4 +49,5 @@ struct LoginPage {
         return passwordTest.evaluate(with: password)
     }
    
+    
 }
