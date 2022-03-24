@@ -7,17 +7,24 @@
 
 import Foundation
 
-struct Assignment {
+enum Status {
+    case notStrtd
+    case inPrgrs
+    case finished
+    
+}
+
+class Assignment {
 //    init() {
 //        assignmentName = ""
 //        assignmentDetails = ""
 //        dueDate = ""
 //
 //    }
-    init (_assignmentName: String, _dueDate: String, _assignmentDetails: String?, _assigmentLink: String? ) {
+    init (_assignmentName: String, _dueDate: String, _assignmentDetails: String?, _assigmentStatus: Status? ) {
         assignmentName = _assignmentName
         assignmentDetails = _assignmentDetails
-        assignmentLink = _assigmentLink
+        status = _assigmentStatus
         dueDate = _dueDate
     }
     
@@ -31,14 +38,14 @@ struct Assignment {
     func getAssignmentDetails() -> String? {
         return assignmentDetails
     }
-    func getAssignmentLink () -> String? {
-        return assignmentLink
+    func getAssignmentStatus() -> Status? {
+        return status
     }
 //    Assignments should always have a name, and
     var assignmentName: String
     var dueDate: String
     var assignmentDetails: String?
-    var assignmentLink: String?
+    var status: Status?
 }
 
 
