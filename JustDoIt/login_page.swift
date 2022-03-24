@@ -32,8 +32,8 @@ struct LoginPage {
         let pred = NSPredicate(format:"SELF MATCHES %@", regEx)
         return pred.evaluate(with: email)
     }
-    //
     
+    ////
     //    There’s at least one uppercase letter
     //    There’s at least one lowercase letter
     //    There’s at least one numeric digit
