@@ -37,11 +37,11 @@ class ViewController: UIViewController {
     }
 }
 
-let ex = Assignments("Project Check-in 3", dueBy: "3/23/22", details: "Woop", status: Status.inPrgrs)
+let ex = Assignment("Project Check-in 3", dueBy: "3/23/22", details: "Woop", status: Status.inPrgrs)
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(ex.assignmentName)")
+        print("\(ex.getName())")
     }
 }
 extension ViewController: UITableViewDataSource {
@@ -50,45 +50,11 @@ extension ViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "asgnmnts", for: indexPath)
-        cell.textLabel?.text = ex.assignmentName
+        cell.textLabel?.text = ex.getName()
         return cell
     }
     
     
     
-}
-
-enum Status {
-    case notStrtd
-    case inPrgrs
-    case finished
-}
-
-class Assignments{
-    init (_ _assignmentName: String,dueBy _dueDate: String,details _assignmentDetails: String?,status _assigmentStatus: Status? ) {
-        assignmentName = _assignmentName
-        assignmentDetails = _assignmentDetails
-        status = _assigmentStatus
-        dueDate = _dueDate
-    }
-    
-    func getAssignmentName() -> String {
-        return assignmentName
-    }
-    
-    func getDueDate() -> String {
-        return dueDate
-    }
-    func getAssignmentDetails() -> String? {
-        return assignmentDetails
-    }
-    func getAssignmentStatus() -> Status? {
-        return status
-    }
-//    Assignments should always have a name, and
-    var assignmentName: String
-    var dueDate: String
-    var assignmentDetails: String?
-    var status: Status?
 }
 
