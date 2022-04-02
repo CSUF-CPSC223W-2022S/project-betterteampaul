@@ -13,15 +13,13 @@ var testCheck: String = "student"
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
     
    
     var loginObj = LoginPage(email: testEmail, password: testPassword)
-
-    @IBAction func Email(_ sender: Any) {
-    }
-    @IBAction func Password(_ sender: Any) {
-    }
-    @IBAction func JustDoIt(_ sender: Any) {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.navigationItem.title = usernameTextField.text
     }
     
 }
