@@ -178,19 +178,19 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="h45-a7-Us0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Assignment Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgX-q3-Fbc">
-                                <rect key="frame" x="51" y="117" width="312" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgX-q3-Fbc">
+                                <rect key="frame" x="51" y="127" width="312" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="37"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV2-Li-xVH">
-                                <rect key="frame" x="51" y="222.5" width="312" height="52.5"/>
+                                <rect key="frame" x="51" y="231.5" width="312" height="43.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="37"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -198,7 +198,7 @@
                                 <rect key="frame" x="51" y="325" width="312" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="37"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -206,20 +206,20 @@
                                 <rect key="frame" x="51" y="429" width="312" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="37"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-8a-I1x">
-                                <rect key="frame" x="51" y="177.5" width="312" height="37"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O43-2i-Rka">
+                                <rect key="frame" x="51" y="283" width="312" height="34"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O43-2i-Rka">
-                                <rect key="frame" x="51" y="283" width="312" height="34"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-G7-Z40">
+                                <rect key="frame" x="51" y="189" width="312" height="34"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -238,6 +238,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Assignment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvN-ua-VcO">
+                                <rect key="frame" x="207" y="44" width="156" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="27"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rv0-Di-bFv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -247,26 +256,26 @@
                             <constraint firstItem="O43-2i-Rka" firstAttribute="top" secondItem="QV2-Li-xVH" secondAttribute="bottom" constant="8" id="6xH-Qc-vic"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="oWg-0N-eez" secondAttribute="bottom" constant="387" id="7AH-4P-RAd"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="ThE-Da-DXy" secondAttribute="bottom" constant="283" id="7CU-ON-2WF"/>
-                            <constraint firstItem="YgX-q3-Fbc" firstAttribute="top" secondItem="rv0-Di-bFv" secondAttribute="top" constant="117" id="9WN-cW-7ma"/>
+                            <constraint firstItem="YgX-q3-Fbc" firstAttribute="top" secondItem="rv0-Di-bFv" secondAttribute="top" constant="127" id="9WN-cW-7ma"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="YgX-q3-Fbc" secondAttribute="trailing" constant="51" id="9nP-h9-5hJ"/>
                             <constraint firstItem="y0b-Og-F4O" firstAttribute="top" secondItem="oWg-0N-eez" secondAttribute="bottom" constant="8" id="BLC-OM-whf"/>
                             <constraint firstItem="jOh-aZ-1IK" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="Clv-gg-5Rd"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="ThE-Da-DXy" secondAttribute="trailing" constant="51" id="DOT-rF-mug"/>
-                            <constraint firstItem="Uv2-8a-I1x" firstAttribute="top" secondItem="YgX-q3-Fbc" secondAttribute="bottom" constant="8" id="IX0-KQ-3NA"/>
+                            <constraint firstItem="Bq7-G7-Z40" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="HBa-5k-cYz"/>
                             <constraint firstItem="jOh-aZ-1IK" firstAttribute="top" secondItem="O43-2i-Rka" secondAttribute="bottom" constant="8" id="KnU-Pf-6EE"/>
-                            <constraint firstItem="QV2-Li-xVH" firstAttribute="top" secondItem="Uv2-8a-I1x" secondAttribute="bottom" constant="8" id="Lf1-Xh-c33"/>
+                            <constraint firstItem="QV2-Li-xVH" firstAttribute="top" secondItem="Bq7-G7-Z40" secondAttribute="bottom" constant="8.5" id="LXz-cW-XzS"/>
+                            <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="Bq7-G7-Z40" secondAttribute="trailing" constant="51" id="S7j-qL-TI7"/>
                             <constraint firstItem="ThE-Da-DXy" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="ZFA-Zx-J9G"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="y0b-Og-F4O" secondAttribute="trailing" constant="51" id="ZbW-Wi-POU"/>
-                            <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="Uv2-8a-I1x" secondAttribute="bottom" constant="593.5" id="a5R-8q-dEw"/>
-                            <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="Uv2-8a-I1x" secondAttribute="trailing" constant="51" id="aA9-eC-JtJ"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="QV2-Li-xVH" secondAttribute="trailing" constant="51" id="aGo-To-dBn"/>
                             <constraint firstItem="QV2-Li-xVH" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="bAi-Ci-hGv"/>
                             <constraint firstItem="y0b-Og-F4O" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="bXd-dW-GP0"/>
+                            <constraint firstItem="Bq7-G7-Z40" firstAttribute="top" secondItem="YgX-q3-Fbc" secondAttribute="bottom" constant="8" symbolic="YES" id="cpg-KX-zu1"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="O43-2i-Rka" secondAttribute="trailing" constant="51" id="dtx-Xf-gV7"/>
                             <constraint firstItem="oWg-0N-eez" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="h10-Aw-hRF"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="trailing" secondItem="jOh-aZ-1IK" secondAttribute="trailing" constant="51" id="hfr-o3-wWk"/>
+                            <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="Bq7-G7-Z40" secondAttribute="bottom" constant="585" id="lpe-ni-D44"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="QV2-Li-xVH" secondAttribute="bottom" constant="533" id="m2C-DV-2wW"/>
-                            <constraint firstItem="Uv2-8a-I1x" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="oqK-9m-nlU"/>
                             <constraint firstItem="rv0-Di-bFv" firstAttribute="bottom" secondItem="O43-2i-Rka" secondAttribute="bottom" constant="491" id="pbi-HU-0e1"/>
                             <constraint firstItem="ThE-Da-DXy" firstAttribute="top" secondItem="y0b-Og-F4O" secondAttribute="bottom" constant="8" id="uow-p3-BC5"/>
                             <constraint firstItem="YgX-q3-Fbc" firstAttribute="leading" secondItem="rv0-Di-bFv" secondAttribute="leading" constant="51" id="vXe-u4-CPn"/>
