@@ -41,6 +41,7 @@ class NotificationSetting: UIViewController {
             message.notificationsIsOn = false
             NotificationStateLabel.text = "Notifications Off"
             message.pushMessage = ""
+
         }
         
     }
