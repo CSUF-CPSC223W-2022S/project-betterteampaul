@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jcX-jr-T4h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,35 +9,35 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="iTU-HL-nRd">
+        <scene sceneID="tfe-kr-AEM">
             <objects>
-                <viewController id="jcX-jr-T4h" customClass="ViewController" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="igx-r8-utl">
+                <viewController id="m7y-Qw-i1j" customClass="ViewController" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3p-Sw-ZUB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-Jl-mkY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-MG-wuS">
                                 <rect key="frame" x="140" y="233" width="134" height="34.5"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="5de-gy-QXG"/>
+                        <viewLayoutGuide key="safeArea" id="kjT-vd-lV0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mfg-Jl-mkY" secondAttribute="trailing" constant="120" id="GOL-ka-fWC"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="centerY" secondItem="igx-r8-utl" secondAttribute="centerY" constant="-197.75" id="GZ9-xu-bHK"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="leading" secondItem="igx-r8-utl" secondAttribute="leadingMargin" constant="120" id="kJr-Jj-var"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="top" secondItem="igx-r8-utl" secondAttribute="topMargin" constant="189" id="qQY-uZ-uBz"/>
+                            <constraint firstItem="f3p-MG-wuS" firstAttribute="top" secondItem="O3p-Sw-ZUB" secondAttribute="topMargin" constant="189" id="Hgy-GM-aU3"/>
+                            <constraint firstItem="f3p-MG-wuS" firstAttribute="centerY" secondItem="O3p-Sw-ZUB" secondAttribute="centerY" constant="-197.75" id="YQT-Pz-DlT"/>
+                            <constraint firstItem="f3p-MG-wuS" firstAttribute="leading" secondItem="O3p-Sw-ZUB" secondAttribute="leadingMargin" constant="120" id="kYh-18-nQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f3p-MG-wuS" secondAttribute="trailing" constant="120" id="noZ-ee-PWE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateTxt" destination="Mfg-Jl-mkY" id="BYl-GR-eva"/>
+                        <outlet property="dateTxt" destination="f3p-MG-wuS" id="Qaz-ls-hlz"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="63s-5e-h1E" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="3U6-xI-9yc"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORW-H7-4AY" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="fjM-vC-dnn"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
         </scene>
