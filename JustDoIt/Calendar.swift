@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class Calendar: UIViewController {
 
     @IBOutlet weak var dateTxt: UITextField!
     override func viewDidLoad() {

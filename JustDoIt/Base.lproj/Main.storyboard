@@ -16,35 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-Jl-mkY">
-                                <rect key="frame" x="140" y="233" width="134" height="34.5"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnm-2W-58D">
+                                <rect key="frame" x="181" y="433" width="54" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="Kbz-2x-rAl" kind="show" id="wqV-kA-YRf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5de-gy-QXG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mfg-Jl-mkY" secondAttribute="trailing" constant="120" id="GOL-ka-fWC"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="centerY" secondItem="igx-r8-utl" secondAttribute="centerY" constant="-197.75" id="GZ9-xu-bHK"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="leading" secondItem="igx-r8-utl" secondAttribute="leadingMargin" constant="120" id="kJr-Jj-var"/>
-                            <constraint firstItem="Mfg-Jl-mkY" firstAttribute="top" secondItem="igx-r8-utl" secondAttribute="topMargin" constant="189" id="qQY-uZ-uBz"/>
+                            <constraint firstItem="5de-gy-QXG" firstAttribute="trailing" secondItem="qnm-2W-58D" secondAttribute="trailing" constant="179" id="0DW-kN-KbD"/>
+                            <constraint firstItem="qnm-2W-58D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5de-gy-QXG" secondAttribute="leading" id="J65-SK-HS0"/>
+                            <constraint firstItem="qnm-2W-58D" firstAttribute="top" secondItem="5de-gy-QXG" secondAttribute="top" constant="389" id="lf0-Hl-o7e"/>
+                            <constraint firstItem="qnm-2W-58D" firstAttribute="centerY" secondItem="igx-r8-utl" secondAttribute="centerY" id="mhq-HM-OSJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dateTxt" destination="Mfg-Jl-mkY" id="BYl-GR-eva"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63s-5e-h1E" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="3U6-xI-9yc"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Calendar Main-->
         <scene sceneID="cOz-Ys-sgl">
             <objects>
-                <viewControllerPlaceholder id="Kbz-2x-rAl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Calendar Main" id="Kbz-2x-rAl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="smD-W6-ibF"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BP-Sp-aaZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576" y="1"/>
@@ -53,9 +54,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
