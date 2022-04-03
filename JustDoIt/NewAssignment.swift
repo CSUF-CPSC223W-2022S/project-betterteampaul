@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewAssignment.swift
 //  JustDoIt
 //
 //  Created by Guillian Daguplo on 4/2/22.
