@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     
    
-    var loginObj = LoginPage(email: testEmail, password: testPassword)
+   // var loginObj = LoginPage(email: testEmail, password: testPassword)
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.navigationItem.title = usernameTextField.text
