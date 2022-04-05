@@ -22,17 +22,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-ZE-gLH">
+                                <rect key="frame" x="1" y="318" width="414" height="364"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6zb-EF-ye0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="IIu-ZE-gLH" firstAttribute="leading" secondItem="6zb-EF-ye0" secondAttribute="leading" constant="1" id="0Dh-Sh-ihp"/>
+                            <constraint firstAttribute="trailing" secondItem="IIu-ZE-gLH" secondAttribute="trailing" constant="-1" id="21i-Mi-vem"/>
                             <constraint firstItem="reM-95-bbs" firstAttribute="top" secondItem="bQl-sP-T24" secondAttribute="topMargin" constant="189" id="2lA-yj-VBm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="reM-95-bbs" secondAttribute="trailing" constant="120" id="BiF-Vm-pGf"/>
                             <constraint firstItem="reM-95-bbs" firstAttribute="leading" secondItem="bQl-sP-T24" secondAttribute="leadingMargin" constant="120" id="GBS-Yy-q1J"/>
+                            <constraint firstItem="IIu-ZE-gLH" firstAttribute="top" secondItem="reM-95-bbs" secondAttribute="bottom" constant="50" id="UKY-NK-BXh"/>
                             <constraint firstItem="reM-95-bbs" firstAttribute="centerY" secondItem="bQl-sP-T24" secondAttribute="centerY" constant="-197.75" id="gio-rx-5AX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Userinput" destination="IIu-ZE-gLH" id="ZXg-qo-8Lu"/>
                         <outlet property="dateTxt" destination="reM-95-bbs" id="Hdr-kJ-iCp"/>
                     </connections>
                 </viewController>

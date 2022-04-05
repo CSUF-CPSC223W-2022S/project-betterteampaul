@@ -85,9 +85,9 @@ class JustDoItCalenderTests: XCTestCase {
         let dayobj = Days(-3)
         XCTAssertEqual(dayobj.days, 1)
     }
-    func testdate(){
-        let dateobj = info("March,22 2022");
-        XCTAssertEqual(dateobj.date,"March,22 2022")
-    }
+//    func testdate(){
+//        let dateobj = info("March,22 2022");
+//        XCTAssertEqual(dateobj.date,"March,22 2022")
+//    }
 
 }

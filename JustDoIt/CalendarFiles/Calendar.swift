@@ -10,11 +10,13 @@ import UIKit
 
 class Calendar: UIViewController {
 
+    @IBOutlet weak var userinput: UIDatePicker!
     @IBOutlet weak var dateTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         createDate()
+        userinput.date
     }
     
 
