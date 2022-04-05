@@ -40,3 +40,4 @@ class JustDoItUITests: XCTestCase {
         }
     }
 }
+
