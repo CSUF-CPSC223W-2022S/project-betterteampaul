@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFv-9w-TpL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFv-9w-TpL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +37,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Log in"/>
                                                 <connections>
-                                                    <segue destination="pQ9-oz-s4a" kind="show" id="O6d-2f-bC4"/>
+                                                    <segue destination="yGm-xb-A5A" kind="show" id="W92-bI-H3H"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -84,51 +83,23 @@
             </objects>
             <point key="canvasLocation" x="2654" y="80"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jRm-7v-0jx">
+        <!--TodoList-->
+        <scene sceneID="gQl-dI-HOs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="pQ9-oz-s4a" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7Fd-aB-jIy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lgT-sU-o0V">
-                                <rect key="frame" x="87" y="318" width="240" height="260"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid Username!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-mf-jHE">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="260"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4pK-ac-eMA"/>
-                                    <constraint firstAttribute="height" constant="260" id="NYW-a2-2xe"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="jxQ-u3-PV2"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pFF-Zy-qwG"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                        <constraints>
-                            <constraint firstItem="lgT-sU-o0V" firstAttribute="centerX" secondItem="7Fd-aB-jIy" secondAttribute="centerX" id="4mj-cl-sMH"/>
-                            <constraint firstItem="lgT-sU-o0V" firstAttribute="centerY" secondItem="7Fd-aB-jIy" secondAttribute="centerY" id="dGi-Qk-YGe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="DXo-gE-p8b"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CIr-3V-3ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TodoList" id="yGm-xb-A5A" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="20E-WT-F4C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTT-kv-xNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3439.130434782609" y="79.6875"/>
+            <point key="canvasLocation" x="3254" y="-75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ETl-ub-QfV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TFv-9w-TpL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pXH-Gb-9hY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pXH-Gb-9hY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -141,9 +112,4 @@
             <point key="canvasLocation" x="1797.1014492753625" y="80.357142857142847"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
