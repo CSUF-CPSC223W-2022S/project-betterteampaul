@@ -87,7 +87,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="assignmentEdit:" destination="LRe-P1-0pS" eventType="touchUpInside" id="Sct-gl-GTS"/>
-                                    <segue destination="NSr-4b-ebb" kind="show" id="nLD-9I-eEq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -279,22 +278,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39d-Ag-RkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="-563"/>
+            <point key="canvasLocation" x="700" y="-595"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="OOC-II-rij">
-            <objects>
-                <viewControllerPlaceholder id="NSr-4b-ebb" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="EXh-St-hjg"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnj-Np-JSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="830" y="42"/>
-        </scene>
-        <!--Storyboard Reference-->
+        <!--Main-->
         <scene sceneID="ntX-V6-sXC">
             <objects>
-                <viewControllerPlaceholder id="KPm-BV-KVD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" id="KPm-BV-KVD" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9C3-1d-aP4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zr9-GK-xjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
