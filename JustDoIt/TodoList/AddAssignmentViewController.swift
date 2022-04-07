@@ -6,23 +6,28 @@
 //
 
 import UIKit
-
+protocol DataEnteredDelegate {
+    func userDidEnterNewAsgnmnt(assignment:Assignment)
+}
 class AddAssignmentViewController: UIViewController {
-    var receiverVC:ToDoViewController?
-    @IBOutlet var AssignmentName: UITextField!
+    @IBOutlet weak var AssignmentName: UITextField!
     @IBOutlet weak var dueDate: UITextField!
-    @IBOutlet weak var status: UITextField!
     @IBOutlet weak var notes: UITextField!
+    
+    var delegate:DataEnteredDelegate? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        receiverVC = segue.destination as? ToDoViewController
-    }
+    
     @IBAction func AddAssignment(_ sender: Any) {
-        let assignment = Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd)
-        receiverVC!.assignments?.append(assignment)
+        if (delegate != nil){
+            let assignment = Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd)
+            delegate!.userDidEnterNewAsgnmnt(assignment: assignment)
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
 
 
