@@ -25,6 +25,7 @@ class NotificationDisplay: UIViewController {
         message.appendAssignmentToMessage()
         // we then set the text equal to the full message
         Notification.text = message.pushNotification()
+        message.pastNotificationMessages.append(message.pushNotification())
         } else {
         // noitifactions are off so we don't display anything
             Notification.text = ""
