@@ -22,13 +22,14 @@
 		9DE090F027FE480400A858A3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* Calendar.swift */; };
 		9DE090F127FE480400A858A3 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
 		9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F227FE481300A858A3 /* TodoListViewController.swift */; };
-		9DE090F727FE481300A858A3 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F327FE481300A858A3 /* TodoListCell.swift */; };
 		9DE090F827FE481300A858A3 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090F427FE481300A858A3 /* TodoList.storyboard */; };
 		9DE090F927FE481300A858A3 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F527FE481300A858A3 /* Assignment.swift */; };
 		9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FA27FE482400A858A3 /* Notifications.swift */; };
 		9DE090FF27FE482400A858A3 /* NotificationPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */; };
 		9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */; };
 		9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FD27FE482400A858A3 /* NotificationSetting.swift */; };
+		9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
+		9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +69,13 @@
 		9DE090EE27FE480300A858A3 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarStry.storyboard; sourceTree = "<group>"; };
 		9DE090F227FE481300A858A3 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
-		9DE090F327FE481300A858A3 /* TodoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
 		9DE090F427FE481300A858A3 /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
 		9DE090F527FE481300A858A3 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		9DE090FA27FE482400A858A3 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationPages.storyboard; sourceTree = "<group>"; };
 		9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDisplay.swift; sourceTree = "<group>"; };
 		9DE090FD27FE482400A858A3 /* NotificationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetting.swift; sourceTree = "<group>"; };
+		9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +176,8 @@
 			children = (
 				9DE090F527FE481300A858A3 /* Assignment.swift */,
 				9DE090F427FE481300A858A3 /* TodoList.storyboard */,
-				9DE090F327FE481300A858A3 /* TodoListCell.swift */,
 				9DE090F227FE481300A858A3 /* TodoListViewController.swift */,
+				9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -327,13 +328,13 @@
 			files = (
 				9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */,
 				9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */,
+				9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 				49737E5727C47CE80053CC29 /* login_page.swift in Sources */,
 				9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */,
 				9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */,
 				9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */,
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
 				9DE090F927FE481300A858A3 /* Assignment.swift in Sources */,
-				9DE090F727FE481300A858A3 /* TodoListCell.swift in Sources */,
 				9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */,
 				9DE090F027FE480400A858A3 /* Calendar.swift in Sources */,
 			);
@@ -344,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */,
+				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 				9D9FABF127C43A4800D911A4 /* JustDoItTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

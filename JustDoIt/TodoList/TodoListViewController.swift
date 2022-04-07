@@ -9,14 +9,21 @@ import Foundation
 import UIKit
 
 class ToDoViewController: UIViewController {
-
-    @IBOutlet var cellLabel: UILabel!
+//    Testing Assignments
+    var assignments: [Assignment]? = [Assignment("Project Checkin 1", dueBy: "Passed", details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: "Passed", details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: "Passed", details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: "4/6/2022", details: "Merged and ready 2 go", status: .inPrgrs)]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        tableView.delegate = self
-//        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let receiverVC = segue.destination as! AddAssignmentViewController
+        if let assignmentList = assignments {
+            receiverVC.assignmentList = assignmentList
+        }
+        
     }
 
     //Users can edit assignments, mutate properties
@@ -26,13 +33,25 @@ class ToDoViewController: UIViewController {
     //Will allow for creation of new assignment to display on table view "AssignmentList"
     @IBAction func newAssignment(_ sender: Any) {
      print("Creating New Assignment")
+    
     }
-    //Will allow for deletion of selected assignment to display on table view "AssignmentList"
-    @IBAction func removeAssignment(_ sender: Any) {
-     print("Removing Assignment")
+    
+    
+}
+extension ToDoViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("you tapped me!")
     }
-    //Users can get more information on a given assignment
-    @IBAction func assignmentInfo(_ sender: Any) {
-     print("Getting Assignment Info")
+}
+
+extension ToDoViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return assignments!.count
     }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = assignments![indexPath.row].getName()
+        return cell
+    }
+    
 }
