@@ -206,6 +206,8 @@
 			dependencies = (
 			);
 			name = JustDoIt;
+			packageProductDependencies = (
+			);
 			productName = JustDoIt;
 			productReference = 9D9FABD627C43A4600D911A4 /* JustDoIt.app */;
 			productType = "com.apple.product-type.application";
@@ -278,6 +280,8 @@
 				Base,
 			);
 			mainGroup = 9D9FABCD27C43A4600D911A4;
+			packageReferences = (
+			);
 			productRefGroup = 9D9FABD727C43A4600D911A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
