@@ -12,7 +12,6 @@
         <!--Your Assignments-->
         <scene sceneID="0oI-HJ-gI2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lnC-fc-zvU" sceneMemberID="firstResponder"/>
                 <viewController id="LRe-P1-0pS" customClass="ToDoViewController" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rUI-Xx-gJy" customClass="TodoListViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -97,6 +96,7 @@
                         <outlet property="tableView" destination="SST-7Y-0Jx" id="Rn8-th-hb8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnC-fc-zvU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="109.82142857142857"/>
         </scene>
@@ -187,7 +187,7 @@
                                     <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="AddAssignment:" destination="Vku-z4-cBb" eventType="touchUpInside" id="fKd-KR-Arm"/>
+                                    <action selector="AddAssignment:" destination="Vku-z4-cBb" eventType="touchUpInside" id="3dJ-Vf-6Pe"/>
                                 </connections>
                             </button>
                         </subviews>

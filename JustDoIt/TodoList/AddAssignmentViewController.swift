@@ -8,7 +8,7 @@
 import UIKit
 
 class AddAssignmentViewController: UIViewController {
-    var assignmentList:[Assignment]?
+    var receiverVC:ToDoViewController?
     @IBOutlet var AssignmentName: UITextField!
     @IBOutlet weak var dueDate: UITextField!
     @IBOutlet weak var status: UITextField!
@@ -18,17 +18,12 @@ class AddAssignmentViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let receiverVC = segue.destination as! ToDoViewController
-        let assignment = Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd)
-        receiverVC.assignments?.append(assignment)
-        
-        
+        receiverVC = segue.destination as? ToDoViewController
     }
     @IBAction func AddAssignment(_ sender: Any) {
-        if var assignmentList = assignmentList {
-            assignmentList.append(Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd))
-        }
+        let assignment = Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd)
+        receiverVC!.assignments?.append(assignment)
     }
-    
+
 
 }
