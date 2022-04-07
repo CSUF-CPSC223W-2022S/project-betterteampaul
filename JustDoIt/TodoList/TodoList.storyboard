@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SST-7Y-0Jx" customClass="TodoListCell" customModule="JustDoIt">
-                                <rect key="frame" x="20" y="163" width="374" height="650"/>
+                                <rect key="frame" x="20" y="145" width="374" height="668"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="76" id="lei-qW-h8n">
@@ -77,22 +77,59 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="C52-7Q-NbU">
+                                <rect key="frame" x="233" y="103" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" imageContentMode="scaleAspectFit">
+                                        <color key="backgroundColor" red="0.22401019929999999" green="0.22341626880000001" blue="0.23321726919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <imageReference key="image" image="calendar" catalog="system" symbolScale="small" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color red="0.22401019929999999" green="0.22341626880000001" blue="0.23321726919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="OpenSettings:" destination="LRe-P1-0pS" eventType="touchUpInside" id="a1R-1l-ube"/>
+                                    <action selector="selectDate:" destination="LRe-P1-0pS" eventType="touchUpInside" id="Ct8-8w-gOi"/>
+                                    <segue destination="KJg-iN-wQ5" kind="presentation" id="4eb-Jf-xsB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-yW-3Hn">
+                                <rect key="frame" x="20" y="58" width="159" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wNN-m2-i8W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="3ER-eD-tpr"/>
-                            <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="SST-7Y-0Jx" secondAttribute="trailing" constant="20" id="98S-fi-GS6"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="08y-Y1-Vk7" secondAttribute="bottom" constant="18" id="9JC-fv-jLR"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="r2e-Af-h5y" secondAttribute="bottom" constant="18" id="Cqg-4m-ORN"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="119" id="P0p-QI-mwq"/>
-                            <constraint firstItem="wNN-m2-i8W" firstAttribute="bottom" secondItem="SST-7Y-0Jx" secondAttribute="bottom" id="nYF-gY-yA7"/>
+                            <constraint firstItem="9xK-yW-3Hn" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="2UW-yF-k7j"/>
+                            <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="SST-7Y-0Jx" secondAttribute="trailing" constant="20" id="5JT-Qr-1HG"/>
+                            <constraint firstItem="9xK-yW-3Hn" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="14" id="6sc-De-0hx"/>
+                            <constraint firstItem="C52-7Q-NbU" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="54" id="7zi-CG-z1y"/>
+                            <constraint firstItem="wNN-m2-i8W" firstAttribute="bottom" secondItem="SST-7Y-0Jx" secondAttribute="bottom" id="KIT-ve-B8M"/>
+                            <constraint firstItem="r2e-Af-h5y" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="173" id="OOa-jk-flV"/>
+                            <constraint firstItem="08y-Y1-Vk7" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="114" id="Ohg-we-6A7"/>
+                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="101" id="Wz5-El-OUz"/>
+                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="cVi-sT-IKF"/>
+                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="9xK-yW-3Hn" secondAttribute="bottom" constant="45" id="yIc-tU-f8J"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Your Assignments" id="gii-Hs-gzI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dateLabel" destination="9xK-yW-3Hn" id="6xQ-op-DZR"/>
                         <outlet property="tableView" destination="SST-7Y-0Jx" id="Rn8-th-hb8"/>
                     </connections>
                 </viewController>
@@ -109,6 +146,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMq-Bv-TZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="83" y="-258"/>
+        </scene>
+        <!--CalendarStry-->
+        <scene sceneID="094-kZ-j1o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalendarStry" id="KJg-iN-wQ5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a9-q7-4lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="-227"/>
         </scene>
         <!--Adding Assignment-->
         <scene sceneID="ejc-2F-7Vy">
@@ -215,6 +260,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">

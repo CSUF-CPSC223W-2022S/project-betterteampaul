@@ -14,7 +14,7 @@ enum Status {
 }
 
 class Assignment{
-    init (_ _name: String,dueBy _dueDate: String,details _details: String?,status _status: Status?) {
+    init (_ _name: String,dueBy _dueDate: Date?,details _details: String?,status _status: Status?) {
         name = _name
         details = _details
         dueDate = _dueDate
@@ -24,7 +24,7 @@ class Assignment{
         return name
     }
     
-    func getDueDate() -> String {
+    func getDueDate() -> Date? {
         return dueDate
     }
     func getDetails() -> String? {
@@ -37,18 +37,16 @@ class Assignment{
     func setName(as _name: String) {
         name = _name
     }
-    func setDueDate(as _dueDate: String) {
+    func setDueDate(as _dueDate: Date) {
         dueDate = _dueDate
     }
     func setDetails(as _details: String) {
         details = _details
     }
-    func getAssignment() -> Assignment {
-        return Assignment(name, dueBy: dueDate, details: details, status: status)
-    }
+  
 //    Assignments should always have a name, and
     var name: String
-    var dueDate: String
+    var dueDate: Date?
     var details: String?
     var status: Status?
 }

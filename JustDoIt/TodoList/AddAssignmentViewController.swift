@@ -15,15 +15,19 @@ class AddAssignmentViewController: UIViewController {
     @IBOutlet weak var notes: UITextField!
     
     var delegate:DataEnteredDelegate? = nil
+    var currentDate = Date()
+    let formatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func AddAssignment(_ sender: Any) {
         if (delegate != nil){
-            let assignment = Assignment(AssignmentName.text!, dueBy: dueDate.text!, details: notes.text!, status: .notStrtd)
+//            dueBy currently assgined to nil make sure its fixed when you get date
+            let assignment = Assignment(AssignmentName.text!, dueBy: nil, details: notes.text!, status: .notStrtd)
             delegate!.userDidEnterNewAsgnmnt(assignment: assignment)
             self.navigationController?.popViewController(animated: true)
         }
