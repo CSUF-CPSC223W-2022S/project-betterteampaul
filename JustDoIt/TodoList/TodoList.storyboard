@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRe-P1-0pS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRe-P1-0pS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="08y-Y1-Vk7">
-                                <rect key="frame" x="293" y="103" width="42" height="42"/>
+                                <rect key="frame" x="294" y="95" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -37,11 +37,11 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="OpenSettings:" destination="LRe-P1-0pS" eventType="touchUpInside" id="0Eo-9a-k3O"/>
-                                    <segue destination="Y6w-cN-aw6" kind="show" id="i0X-RA-dmm"/>
+                                    <segue destination="Y6w-cN-aw6" kind="show" identifier="SelectedDate" id="i0X-RA-dmm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="r2e-Af-h5y">
-                                <rect key="frame" x="352" y="103" width="42" height="42"/>
+                                <rect key="frame" x="352" y="95" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -77,8 +77,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-yW-3Hn">
+                                <rect key="frame" x="20" y="95" width="165" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="C52-7Q-NbU">
-                                <rect key="frame" x="233" y="103" width="42" height="42"/>
+                                <rect key="frame" x="238" y="95" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -101,14 +109,6 @@
                                     <segue destination="KJg-iN-wQ5" kind="presentation" id="4eb-Jf-xsB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-yW-3Hn">
-                                <rect key="frame" x="20" y="58" width="159" height="42"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wNN-m2-i8W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,13 +116,13 @@
                             <constraint firstItem="9xK-yW-3Hn" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="2UW-yF-k7j"/>
                             <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="SST-7Y-0Jx" secondAttribute="trailing" constant="20" id="5JT-Qr-1HG"/>
                             <constraint firstItem="9xK-yW-3Hn" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="14" id="6sc-De-0hx"/>
-                            <constraint firstItem="C52-7Q-NbU" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="54" id="7zi-CG-z1y"/>
                             <constraint firstItem="wNN-m2-i8W" firstAttribute="bottom" secondItem="SST-7Y-0Jx" secondAttribute="bottom" id="KIT-ve-B8M"/>
-                            <constraint firstItem="r2e-Af-h5y" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="173" id="OOa-jk-flV"/>
-                            <constraint firstItem="08y-Y1-Vk7" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="114" id="Ohg-we-6A7"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="101" id="Wz5-El-OUz"/>
+                            <constraint firstItem="08y-Y1-Vk7" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="109" id="MBJ-tt-pEO"/>
+                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="101" id="P25-Lc-CAe"/>
+                            <constraint firstItem="C52-7Q-NbU" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="53" id="PWP-uo-W1r"/>
                             <constraint firstItem="SST-7Y-0Jx" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="cVi-sT-IKF"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="9xK-yW-3Hn" secondAttribute="bottom" constant="45" id="yIc-tU-f8J"/>
+                            <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="229" id="kQW-EV-1PA"/>
+                            <constraint firstItem="r2e-Af-h5y" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="167" id="nxW-5c-1df"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

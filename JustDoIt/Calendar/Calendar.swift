@@ -8,53 +8,41 @@
 import Foundation
 import UIKit
 
-class Calendar: UIViewController {
+protocol CalendarDelegate {
+    func userDidEnterNewDate(date:Date)
+}
 
-    @IBOutlet weak var userinput: UIDatePicker!
+class Calendar: UIViewController {
+    var selectedDate:Date? = Date()
     @IBOutlet weak var dateTxt: UITextField!
+    var delegate:CalendarDelegate? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        createDate()
-        userinput.date
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(dateChanged(datePicker:)), for: UIControl.Event.valueChanged)
+        datePicker.frame.size
+         = CGSize(width: 0, height: 300)
+        datePicker.preferredDatePickerStyle = .wheels
+        dateTxt.inputView = datePicker
+        dateTxt.text = formatDate(date: datePicker.date)
+        selectedDate = datePicker.date
     }
-    
-
-    let datepick = UIDatePicker()
-    
-    
-    @IBOutlet weak var load: UIActivityIndicatorView!
-    
-    func createDate(){
-        //center the date
-        dateTxt.textAlignment = .center
-        
-        //toolbar
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        
-        //done button
-        let donButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(done))
-        toolbar.setItems([donButton], animated: true)
-        
-        //assign toolbar
-        dateTxt.inputAccessoryView = toolbar
-        
-        //date to text field
-        dateTxt.inputView = datepick
-        
-        //date mode
-        datepick.datePickerMode = .date
+   
+    @objc func dateChanged(datePicker:UIDatePicker) {
+        dateTxt.text = formatDate(date: datePicker.date)
     }
-    @objc func done(){
-        //format
-        let format = DateFormatter()
-        format.dateStyle = .medium
-        format.timeStyle = .none
+    func formatDate(date: Date) -> String{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        return formatter.string(from: date)
+    }
+    @IBAction func selectDate(_ sender: Any) {
+        if (delegate != nil){
+            delegate!.userDidEnterNewDate(date: selectedDate!)
+            self.navigationController?.popViewController(animated: true)
+        }
         
-        dateTxt.text = format.string(from: datepick.date)
-        self.view.endEditing(true)
-        assignmentduedate(dateTxt.text!)
     }
 }
 
