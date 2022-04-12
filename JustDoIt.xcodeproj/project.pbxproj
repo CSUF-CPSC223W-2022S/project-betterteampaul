@@ -19,7 +19,7 @@
 		9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */; };
 		9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */; };
 		9D9FAC0C27C43C2600D911A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FAC0B27C43C2600D911A4 /* .gitignore */; };
-		9DE090F027FE480400A858A3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* Calendar.swift */; };
+		9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* CalendarVC.swift */; };
 		9DE090F127FE480400A858A3 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
 		9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F227FE481300A858A3 /* TodoListViewController.swift */; };
 		9DE090F827FE481300A858A3 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090F427FE481300A858A3 /* TodoList.storyboard */; };
@@ -66,7 +66,7 @@
 		9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITests.swift; sourceTree = "<group>"; };
 		9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D9FAC0B27C43C2600D911A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9DE090EE27FE480300A858A3 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		9DE090EE27FE480300A858A3 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarStry.storyboard; sourceTree = "<group>"; };
 		9DE090F227FE481300A858A3 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		9DE090F427FE481300A858A3 /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		9DE090ED27FE47B200A858A3 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				9DE090EE27FE480300A858A3 /* Calendar.swift */,
+				9DE090EE27FE480300A858A3 /* CalendarVC.swift */,
 				9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */,
 			);
 			path = Calendar;
@@ -336,7 +336,7 @@
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
 				9DE090F927FE481300A858A3 /* Assignment.swift in Sources */,
 				9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */,
-				9DE090F027FE480400A858A3 /* Calendar.swift in Sources */,
+				9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -562,7 +562,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

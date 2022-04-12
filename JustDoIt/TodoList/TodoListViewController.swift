@@ -9,48 +9,55 @@ import Foundation
 import UIKit
 
 class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegate{
-    var currentDate:Date = Date()
-    let formatter:DateFormatter = DateFormatter()
-    
-   
-    var assignments: [Assignment] = [Assignment("Project Checkin 1", dueBy: nil, details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: nil, details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: nil, details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: nil, details: "Merged and ready 2 go", status: .inPrgrs)]
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    
+    var currentDate:Date?
+    var formatter:DateFormatter?
     @IBOutlet var tableView: UITableView!
-//    protocol to update table when new assignment is created
+    @IBOutlet var dateLabel: UILabel!
+    
+    
+    var asgnmntList: [Assignment] = [Assignment("Project Checkin 1", dueBy: nil, details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: nil, details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: nil, details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: nil, details: "Merged and ready 2 go", status: .inPrgrs)]
+    
+    //  Protocol to update table when new assignment is created
     func userDidEnterNewAsgnmnt(assignment: Assignment) {
+        let newIndexPath = IndexPath(row: asgnmntList.count, section: 0)
         tableView.beginUpdates()
-        assignments.append(assignment)
+        asgnmntList.append(assignment)
+        tableView.insertRows(at: [newIndexPath], with: .fade)
+        tableView.reloadData()
         tableView.endUpdates()
     }
-// protocol to get today's date from Alex's view
+    //  Protocol to get user selected date
     func userDidEnterNewDate(date: Date) {
-        currentDate = date
-        dateLabel.text = formatter.string(from: currentDate)
+        print("YSER DID ENTER DATE")
+        print(date)
+        self.dateLabel.text = formatter?.string(from: date)
+        
     }
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        dateLabel.text = formatter.string(from: currentDate)
+        currentDate  = Date()
+        formatter = DateFormatter()
+        formatter?.dateFormat = "MM/dd"
+        dateLabel.text = formatter?.string(from: currentDate!)
         
     }
-    
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "YourAsgnmts2AddAsgnmnts" {
             let secondVC:AddAssignmentViewController = segue.destination as! AddAssignmentViewController
             secondVC.delegate = self
         }
-        if segue.identifier == "SelectedDate" {
-            let calendarVC:Calendar = segue.destination as! Calendar
+        if segue.identifier == "DateSelection" {
+            let calendarVC:CalendarVC = segue.destination as! CalendarVC
             calendarVC.delegate = self
         }
     }
+
     
     @IBAction func AddAssignment(_ sender: Any) {
     }
@@ -68,21 +75,12 @@ extension ToDoViewController: UITableViewDelegate {
 
 extension ToDoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        var count = 0
-////        currentDate =
-//        for asgnmnt in assignments! {
-//            if asgnmnt.dueDate == currentDate {
-//                count += 1
-//            }
-//        }
-//        return count
-        return assignments.count
-        
+        return asgnmntList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        if assignments[indexPath.row].getDueDate() == currentDate {
-            cell.textLabel?.text = assignments[indexPath.row].getName()
+//        if asgnmntList[indexPath.row].getDueDate() == currentDate {
+            cell.textLabel?.text = asgnmntList[indexPath.row].getName()
 //        } else {}
         
         return cell
@@ -93,10 +91,11 @@ extension ToDoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             tableView.beginUpdates()
-            assignments.remove(at: indexPath.row)
+            asgnmntList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
     }
+    
     
 }

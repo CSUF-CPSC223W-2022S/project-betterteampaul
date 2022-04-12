@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WSm-7Q-uNB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WSm-7Q-uNB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,18 +16,19 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePa-LX-cVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65" y="-337"/>
+            <point key="canvasLocation" x="-201" y="-324"/>
         </scene>
-        <!--Calendar-->
+        <!--CalendarVC-->
         <scene sceneID="3Gz-92-8Vn">
             <objects>
-                <viewController id="WSm-7Q-uNB" customClass="Calendar" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WSm-7Q-uNB" customClass="CalendarVC" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQl-sP-T24">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reM-95-bbs">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reM-95-bbs">
                                 <rect key="frame" x="140" y="233" width="134" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -40,23 +41,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="selectDate:" destination="WSm-7Q-uNB" eventType="touchUpInside" id="yF7-U5-xLF"/>
-                                    <segue destination="Qvp-w9-csu" kind="show" identifier="" id="V73-jR-mdj"/>
+                                    <action selector="selectDate:" destination="WSm-7Q-uNB" eventType="touchUpInside" id="7Ov-tU-EQI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6zb-EF-ye0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="reM-95-bbs" firstAttribute="top" secondItem="bQl-sP-T24" secondAttribute="topMargin" constant="189" id="2lA-yj-VBm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="reM-95-bbs" secondAttribute="trailing" constant="120" id="BiF-Vm-pGf"/>
-                            <constraint firstItem="reM-95-bbs" firstAttribute="leading" secondItem="bQl-sP-T24" secondAttribute="leadingMargin" constant="120" id="GBS-Yy-q1J"/>
-                            <constraint firstItem="6zb-EF-ye0" firstAttribute="bottom" secondItem="reM-95-bbs" secondAttribute="bottom" constant="594.5" id="gfq-cf-2Rp"/>
-                            <constraint firstItem="reM-95-bbs" firstAttribute="centerY" secondItem="bQl-sP-T24" secondAttribute="centerY" constant="-197.75" id="gio-rx-5AX"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateTxt" destination="reM-95-bbs" id="Hdr-kJ-iCp"/>
+                        <outlet property="dateTxt" destination="reM-95-bbs" id="Ani-8g-fE0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTP-SI-4BS" sceneMemberID="firstResponder"/>

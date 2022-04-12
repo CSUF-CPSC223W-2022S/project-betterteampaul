@@ -12,9 +12,10 @@ protocol CalendarDelegate {
     func userDidEnterNewDate(date:Date)
 }
 
-class Calendar: UIViewController {
+class CalendarVC: UIViewController {
     var selectedDate:Date? = Date()
-    @IBOutlet weak var dateTxt: UITextField!
+
+    @IBOutlet var dateTxt: UITextField!
     var delegate:CalendarDelegate? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +26,13 @@ class Calendar: UIViewController {
          = CGSize(width: 0, height: 300)
         datePicker.preferredDatePickerStyle = .wheels
         dateTxt.inputView = datePicker
-        dateTxt.text = formatDate(date: datePicker.date)
+        dateTxt.text = formatDate(date: Date())
+        print(datePicker.date)
         selectedDate = datePicker.date
     }
    
     @objc func dateChanged(datePicker:UIDatePicker) {
+        selectedDate = datePicker.date
         dateTxt.text = formatDate(date: datePicker.date)
     }
     func formatDate(date: Date) -> String{
@@ -46,11 +49,11 @@ class Calendar: UIViewController {
     }
 }
 
-//stores information
-struct assignmentduedate{
-    var date: String
-    init(_ date: String){
-        self.date = date
-    }
-}
+////stores information
+//struct assignmentduedate{
+//    var date: String
+//    init(_ date: String){
+//        self.date = date
+//    }
+//}
 

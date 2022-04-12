@@ -20,6 +20,12 @@ class Assignment{
         dueDate = _dueDate
         status = _status
     }
+    init () {
+        name = "Name goes here"
+        details = "Details are here"
+        dueDate = Date()
+        status = .notStrtd
+    }
     func getName() -> String {
         return name
     }

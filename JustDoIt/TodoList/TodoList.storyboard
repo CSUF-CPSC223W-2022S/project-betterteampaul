@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRe-P1-0pS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRe-P1-0pS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -37,7 +37,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="OpenSettings:" destination="LRe-P1-0pS" eventType="touchUpInside" id="0Eo-9a-k3O"/>
-                                    <segue destination="Y6w-cN-aw6" kind="show" identifier="SelectedDate" id="i0X-RA-dmm"/>
+                                    <segue destination="Y6w-cN-aw6" kind="show" identifier="Notifications" id="i0X-RA-dmm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="r2e-Af-h5y">
@@ -63,22 +63,24 @@
                                     <segue destination="Vku-z4-cBb" kind="show" identifier="YourAsgnmts2AddAsgnmnts" id="mNd-Tt-vOL"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SST-7Y-0Jx" customClass="TodoListCell" customModule="JustDoIt">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SST-7Y-0Jx" customClass="TodoListCell" customModule="JustDoIt">
                                 <rect key="frame" x="20" y="145" width="374" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="76" id="lei-qW-h8n">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="76"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="qYi-2c-iNX">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier=" cell" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lei-qW-h8n" id="aTo-Ql-YKV" customClass="TodoListViewController" customModule="JustDoIt" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="76"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qYi-2c-iNX" id="Bz5-Ak-qs5">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-yW-3Hn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-yW-3Hn">
                                 <rect key="frame" x="20" y="95" width="165" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -104,32 +106,19 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="OpenSettings:" destination="LRe-P1-0pS" eventType="touchUpInside" id="a1R-1l-ube"/>
-                                    <action selector="selectDate:" destination="LRe-P1-0pS" eventType="touchUpInside" id="Ct8-8w-gOi"/>
-                                    <segue destination="KJg-iN-wQ5" kind="presentation" id="4eb-Jf-xsB"/>
+                                    <action selector="selectDate:" destination="LRe-P1-0pS" eventType="touchUpInside" id="LrA-S3-G6X"/>
+                                    <segue destination="KJg-iN-wQ5" kind="show" identifier="DateSelection" id="4eb-Jf-xsB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wNN-m2-i8W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="9xK-yW-3Hn" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="2UW-yF-k7j"/>
-                            <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="SST-7Y-0Jx" secondAttribute="trailing" constant="20" id="5JT-Qr-1HG"/>
-                            <constraint firstItem="9xK-yW-3Hn" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="14" id="6sc-De-0hx"/>
-                            <constraint firstItem="wNN-m2-i8W" firstAttribute="bottom" secondItem="SST-7Y-0Jx" secondAttribute="bottom" id="KIT-ve-B8M"/>
-                            <constraint firstItem="08y-Y1-Vk7" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="109" id="MBJ-tt-pEO"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="top" secondItem="wNN-m2-i8W" secondAttribute="top" constant="101" id="P25-Lc-CAe"/>
-                            <constraint firstItem="C52-7Q-NbU" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="53" id="PWP-uo-W1r"/>
-                            <constraint firstItem="SST-7Y-0Jx" firstAttribute="leading" secondItem="wNN-m2-i8W" secondAttribute="leading" constant="20" id="cVi-sT-IKF"/>
-                            <constraint firstItem="wNN-m2-i8W" firstAttribute="trailing" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="229" id="kQW-EV-1PA"/>
-                            <constraint firstItem="r2e-Af-h5y" firstAttribute="leading" secondItem="9xK-yW-3Hn" secondAttribute="trailing" constant="167" id="nxW-5c-1df"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Your Assignments" id="gii-Hs-gzI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="dateLabel" destination="9xK-yW-3Hn" id="6xQ-op-DZR"/>
+                        <outlet property="dateLabel" destination="9xK-yW-3Hn" id="tKP-Uc-Gl7"/>
                         <outlet property="tableView" destination="SST-7Y-0Jx" id="Rn8-th-hb8"/>
                     </connections>
                 </viewController>
@@ -150,7 +139,9 @@
         <!--CalendarStry-->
         <scene sceneID="094-kZ-j1o">
             <objects>
-                <viewControllerPlaceholder storyboardName="CalendarStry" id="KJg-iN-wQ5" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CalendarStry" id="KJg-iN-wQ5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uf9-Kb-XlC"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6a9-q7-4lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="590" y="-227"/>
