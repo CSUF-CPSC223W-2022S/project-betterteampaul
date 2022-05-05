@@ -15,7 +15,6 @@
 		9D9FABE127C43A4600D911A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABDF27C43A4600D911A4 /* Main.storyboard */; };
 		9D9FABE327C43A4800D911A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABE227C43A4800D911A4 /* Assets.xcassets */; };
 		9D9FABE627C43A4800D911A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */; };
-		9D9FABF127C43A4800D911A4 /* JustDoItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */; };
 		9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */; };
 		9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */; };
 		9D9FAC0C27C43C2600D911A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FAC0B27C43C2600D911A4 /* .gitignore */; };
@@ -61,7 +60,6 @@
 		9D9FABE527C43A4800D911A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D9FABE727C43A4800D911A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9FABEC27C43A4800D911A4 /* JustDoItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustDoItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItTests.swift; sourceTree = "<group>"; };
 		9D9FABF627C43A4800D911A4 /* JustDoItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustDoItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITests.swift; sourceTree = "<group>"; };
 		9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 		9D9FABEF27C43A4800D911A4 /* JustDoItTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */,
 				49B0710227D9DD6B00EA930C /* LoginPageTests.swift */,
 			);
 			path = JustDoItTests;
@@ -346,7 +343,6 @@
 			files = (
 				49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */,
 				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
-				9D9FABF127C43A4800D911A4 /* JustDoItTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

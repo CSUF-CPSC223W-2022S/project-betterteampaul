@@ -13,6 +13,7 @@ protocol CalendarDelegate {
 }
 
 class CalendarVC: UIViewController {
+    @IBOutlet weak var ConfirmButton: UIButton!
     var selectedDate:Date? = Date()
 
     @IBOutlet var dateTxt: UITextField!
@@ -29,6 +30,7 @@ class CalendarVC: UIViewController {
         dateTxt.text = formatDate(date: Date())
         print(datePicker.date)
         selectedDate = datePicker.date
+        ConfirmButton.layer.cornerRadius = 5
     }
    
     @objc func dateChanged(datePicker:UIDatePicker) {
