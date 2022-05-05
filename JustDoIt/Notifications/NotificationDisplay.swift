@@ -7,9 +7,20 @@
 
 import UIKit
 
-var message = Notifications()
-class NotificationDisplay: UIViewController {
 
+var message = Notifications()
+class NotificationDisplay: UIViewController, NotifDelegate {
+    func getAssignmentList(list:[Assignment]) -> [Assignment] {
+        return list
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Notifications" {
+            let toDoVC = segue.destination as! ToDoViewController
+            toDoVC.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
