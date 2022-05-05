@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 var message = Notifications()
 class NotificationDisplay: UIViewController {
@@ -14,7 +15,32 @@ class NotificationDisplay: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Notification.text = ""
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        }
+        
+        let content = UNMutableNotificationContent()
+        message.selectMessage()
+        message.appendAssignmentToMessage()
+        message.pushNotification()
+        message.pastNotificationMessages.append(message.pushNotification())
+        content.title = "Just Do It"
+        content.body = message.pushMessage
+        
+        let date = Date().addingTimeInterval(5)
+        
+        let dateComponents = Foundation.Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request) { (error) in }
     }
+    
+    
 
     @IBAction func notificationButton(_ sender: Any) {
         // it notificaitons are on, we generate new notifications

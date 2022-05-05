@@ -16,6 +16,7 @@ struct Notifications {
     // Create a variable to hold the message for the notification
     var pushMessage = ""
     var notificationsIsOn = true
+    var currentDate = Date()
     
     var pastNotificationMessages: [String] = []
     //create an array that will contian various messages that will be selected for the push message
@@ -51,7 +52,7 @@ struct Notifications {
     
     // pushNotification function temporary placeholder, prints message to simulate pushing a notification
     func pushNotification() -> String {
-        print("\(pushMessage)")
+        //print("\(pushMessage)")
         return pushMessage
     }
     
