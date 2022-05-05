@@ -9,6 +9,12 @@
 ## User settings
 .DS_Store
 xcuserdata/
+# Ignore Other Feature Files
+Notifications/
+Calendar/
+Main.storyboard
+LaunchScreen.storyboard
+login_page
 
 # Ignore DS_Store
 .DS_Store
