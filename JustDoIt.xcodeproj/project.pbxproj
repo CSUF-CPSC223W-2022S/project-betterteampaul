@@ -16,20 +16,21 @@
 		9D9FABE127C43A4600D911A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABDF27C43A4600D911A4 /* Main.storyboard */; };
 		9D9FABE327C43A4800D911A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABE227C43A4800D911A4 /* Assets.xcassets */; };
 		9D9FABE627C43A4800D911A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */; };
-		9D9FABF127C43A4800D911A4 /* JustDoItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */; };
 		9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */; };
 		9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */; };
 		9D9FAC0C27C43C2600D911A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FAC0B27C43C2600D911A4 /* .gitignore */; };
-		9DE090F027FE480400A858A3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* Calendar.swift */; };
+		9DD3B0D1281E139D00C75368 /* EditAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */; };
+		9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* CalendarVC.swift */; };
 		9DE090F127FE480400A858A3 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
 		9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F227FE481300A858A3 /* TodoListViewController.swift */; };
-		9DE090F727FE481300A858A3 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F327FE481300A858A3 /* TodoListCell.swift */; };
 		9DE090F827FE481300A858A3 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090F427FE481300A858A3 /* TodoList.storyboard */; };
 		9DE090F927FE481300A858A3 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F527FE481300A858A3 /* Assignment.swift */; };
 		9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FA27FE482400A858A3 /* Notifications.swift */; };
 		9DE090FF27FE482400A858A3 /* NotificationPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */; };
 		9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */; };
 		9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FD27FE482400A858A3 /* NotificationSetting.swift */; };
+		9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
+		9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,21 +63,21 @@
 		9D9FABE527C43A4800D911A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D9FABE727C43A4800D911A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9FABEC27C43A4800D911A4 /* JustDoItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustDoItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItTests.swift; sourceTree = "<group>"; };
 		9D9FABF627C43A4800D911A4 /* JustDoItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustDoItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITests.swift; sourceTree = "<group>"; };
 		9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D9FAC0B27C43C2600D911A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9DE090EE27FE480300A858A3 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAssignmentViewController.swift; sourceTree = "<group>"; };
+		9DE090EE27FE480300A858A3 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarStry.storyboard; sourceTree = "<group>"; };
 		9DE090F227FE481300A858A3 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
-		9DE090F327FE481300A858A3 /* TodoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
 		9DE090F427FE481300A858A3 /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
 		9DE090F527FE481300A858A3 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		9DE090FA27FE482400A858A3 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationPages.storyboard; sourceTree = "<group>"; };
 		9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDisplay.swift; sourceTree = "<group>"; };
 		9DE090FD27FE482400A858A3 /* NotificationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetting.swift; sourceTree = "<group>"; };
+		9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +148,6 @@
 		9D9FABEF27C43A4800D911A4 /* JustDoItTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D9FABF027C43A4800D911A4 /* JustDoItTests.swift */,
 				49B0710227D9DD6B00EA930C /* LoginPageTests.swift */,
 			);
 			path = JustDoItTests;
@@ -178,8 +178,9 @@
 			children = (
 				9DE090F527FE481300A858A3 /* Assignment.swift */,
 				9DE090F427FE481300A858A3 /* TodoList.storyboard */,
-				9DE090F327FE481300A858A3 /* TodoListCell.swift */,
 				9DE090F227FE481300A858A3 /* TodoListViewController.swift */,
+				9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */,
+				9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -187,7 +188,7 @@
 		9DE090ED27FE47B200A858A3 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				9DE090EE27FE480300A858A3 /* Calendar.swift */,
+				9DE090EE27FE480300A858A3 /* CalendarVC.swift */,
 				9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */,
 			);
 			path = Calendar;
@@ -334,16 +335,18 @@
 			files = (
 				9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */,
 				9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */,
+				9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 				49737E5727C47CE80053CC29 /* login_page.swift in Sources */,
 				9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */,
 				9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */,
 				9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */,
+
 				499E4BE8282361C70000FFE4 /* SignUpViewController.swift in Sources */,
+				9DD3B0D1281E139D00C75368 /* EditAssignmentViewController.swift in Sources */,
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
 				9DE090F927FE481300A858A3 /* Assignment.swift in Sources */,
-				9DE090F727FE481300A858A3 /* TodoListCell.swift in Sources */,
 				9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */,
-				9DE090F027FE480400A858A3 /* Calendar.swift in Sources */,
+				9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */,
-				9D9FABF127C43A4800D911A4 /* JustDoItTests.swift in Sources */,
+				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CC7V4JN7U3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -535,11 +539,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.JustDoIt;
+				PRODUCT_BUNDLE_IDENTIFIER = ecs.fullerton.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -550,6 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CC7V4JN7U3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JustDoIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -562,11 +567,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.JustDoIt;
+				PRODUCT_BUNDLE_IDENTIFIER = ecs.fullerton.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
