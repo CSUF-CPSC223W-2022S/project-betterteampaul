@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,7 +38,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Log in"/>
                                                 <connections>
-                                                    <segue destination="yGm-xb-A5A" kind="show" id="W92-bI-H3H"/>
+                                                    <segue destination="yGm-xb-A5A" kind="show" identifier="login" id="KWo-Le-I3f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDe-FD-ZHP" userLabel="Sign up">
@@ -46,7 +47,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                                 <connections>
-                                                    <segue destination="ld7-zZ-J9M" kind="show" id="ADS-YH-Lhf"/>
+                                                    <segue destination="ld7-zZ-J9M" kind="show" identifier="signup" id="ADS-YH-Lhf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -75,26 +76,43 @@
                                     <constraint firstAttribute="height" constant="240" id="RbX-5G-nWs"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JustDoItLogo" translatesAutoresizingMaskIntoConstraints="NO" id="efa-Xq-cpX">
-                                <rect key="frame" x="107" y="138" width="200" height="130"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cGi-zv-Ydz">
+                                <rect key="frame" x="100" y="88" width="214" height="190"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JustDoItLogo" translatesAutoresizingMaskIntoConstraints="NO" id="efa-Xq-cpX">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="190"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evU-e2-uKM">
+                                <rect key="frame" x="76" y="659" width="261" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b7e-Bz-pfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ku-wK-HKl"/>
                             <constraint firstItem="b7e-Bz-pfG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CWE-IM-69m"/>
+                            <constraint firstItem="cGi-zv-Ydz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Cke-cC-1ug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cGi-zv-Ydz" secondAttribute="trailing" constant="100" id="Ef0-ZD-347"/>
+                            <constraint firstItem="cGi-zv-Ydz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YOA-Mr-SNx"/>
+                            <constraint firstItem="b7e-Bz-pfG" firstAttribute="top" secondItem="cGi-zv-Ydz" secondAttribute="bottom" constant="50" id="d47-Cm-jo5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" largeTitleDisplayMode="always" id="VnK-2u-ttg"/>
                     <connections>
+                        <outlet property="invalid" destination="evU-e2-uKM" id="OOv-zl-tNH"/>
+                        <outlet property="passwordTextField" destination="K4B-N4-hUG" id="gls-ML-ZuW"/>
                         <outlet property="usernameTextField" destination="srD-eF-TKB" id="Y2Y-NM-TNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2653.6231884057975" y="79.6875"/>
+            <point key="canvasLocation" x="2621.739130434783" y="79.6875"/>
         </scene>
         <!--TodoList-->
         <scene sceneID="gQl-dI-HOs">
@@ -104,7 +122,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTT-kv-xNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="-75"/>
+            <point key="canvasLocation" x="3255" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ETl-ub-QfV">
@@ -124,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="1797.1014492753625" y="80.357142857142847"/>
         </scene>
-        <!--Sign Up-->
+        <!--SignUp-->
         <scene sceneID="GqE-c8-sLu">
             <objects>
-                <viewController title="Sign Up" id="ld7-zZ-J9M" customClass="ViewController" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUp" id="ld7-zZ-J9M" customClass="SignUpViewController" customModule="JustDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WeZ-It-4gw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +190,13 @@
                                     <constraint firstAttribute="height" constant="240" id="1up-ca-khp"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xk1-eL-egN">
+                                <rect key="frame" x="49" y="652" width="317" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hRa-ny-uOb"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,16 +206,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="ZNX-8n-HHj"/>
+                    <connections>
+                        <outlet property="pwordmatch" destination="xk1-eL-egN" id="W4z-5y-hue"/>
+                        <outlet property="usernsignup" destination="YeG-x4-fZJ" id="e1x-pt-T1k"/>
+                        <outlet property="userpassword" destination="zI5-wR-7h1" id="eTA-WF-Naf"/>
+                        <outlet property="userpassword2" destination="X2o-Qv-6Sz" id="hCg-gi-ung"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqK-Sa-HHz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2707" y="781"/>
+            <point key="canvasLocation" x="2621.739130434783" y="894.64285714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W92-bI-H3H"/>
+        <segue reference="THf-DE-2qj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="JustDoItLogo" width="180" height="180"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

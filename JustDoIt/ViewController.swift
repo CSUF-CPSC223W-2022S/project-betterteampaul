@@ -7,21 +7,24 @@
 
 import UIKit
 
-
-var testEmail: String = "studentemail@csu.fullerton.edu"
-var testPassword: String = "student"
-var testCheck: String = "student"
-
 class ViewController: UIViewController {
+    // login page
+    @IBOutlet var usernameTextField: UITextField!
 
-    @IBOutlet weak var usernameTextField: UITextField!
-    
-  
-   // var loginObj = LoginPage(email: testEmail, password: testPassword)
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination.navigationItem.title = usernameTextField.text
+    @IBOutlet var invalid: UILabel!
+
+    @IBOutlet var passwordTextField: UITextField!
+
+    // var loginObj = LoginPage(email: testEmail, password: testPassword)
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if usernameTextField.text == "student@csu.fullerton.edu", passwordTextField.text == "student", identifier == "login" {
+            return true
+        } else if identifier == "signup" {
+            return true
+        } else {
+            invalid.text = "Invalid username or password"
+            return false
+        }
     }
-    
 }
-
