@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
+		499E4BE8282361C70000FFE4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E4BE7282361C70000FFE4 /* SignUpViewController.swift */; };
 		49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
 		7AB0165327FEA92F00D1164C /* OldNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0165227FEA92F00D1164C /* OldNotifications.swift */; };
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		49737E5627C47CE80053CC29 /* login_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_page.swift; sourceTree = "<group>"; };
+		499E4BE7282361C70000FFE4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		49B0710227D9DD6B00EA930C /* LoginPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageTests.swift; sourceTree = "<group>"; };
 		7AB0165227FEA92F00D1164C /* OldNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNotifications.swift; sourceTree = "<group>"; };
 		9D9FABD627C43A4600D911A4 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 				9D9FABD927C43A4600D911A4 /* AppDelegate.swift */,
 				9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */,
 				9D9FABDD27C43A4600D911A4 /* ViewController.swift */,
+				499E4BE7282361C70000FFE4 /* SignUpViewController.swift */,
 				9D9FABDF27C43A4600D911A4 /* Main.storyboard */,
 				9D9FABE227C43A4800D911A4 /* Assets.xcassets */,
 				9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */,
@@ -210,6 +213,8 @@
 			dependencies = (
 			);
 			name = JustDoIt;
+			packageProductDependencies = (
+			);
 			productName = JustDoIt;
 			productReference = 9D9FABD627C43A4600D911A4 /* JustDoIt.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +287,8 @@
 				Base,
 			);
 			mainGroup = 9D9FABCD27C43A4600D911A4;
+			packageReferences = (
+			);
 			productRefGroup = 9D9FABD727C43A4600D911A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,9 +343,11 @@
 				9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */,
 				9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */,
 				9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */,
+ login_page
+				499E4BE8282361C70000FFE4 /* SignUpViewController.swift in Sources */,
         Notifications
 				7AB0165327FEA92F00D1164C /* OldNotifications.swift in Sources */,
-
+main
 				9DD3B0D1281E139D00C75368 /* EditAssignmentViewController.swift in Sources */,
         main
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
