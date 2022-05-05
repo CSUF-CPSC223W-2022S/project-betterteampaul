@@ -49,11 +49,4 @@ class CalendarVC: UIViewController {
     }
 }
 
-////stores information
-//struct assignmentduedate{
-//    var date: String
-//    init(_ date: String){
-//        self.date = date
-//    }
-//}
 

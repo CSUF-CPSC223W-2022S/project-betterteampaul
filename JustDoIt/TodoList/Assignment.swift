@@ -56,3 +56,5 @@ class Assignment{
     var details: String?
     var status: Status?
 }
+
+

@@ -13,9 +13,12 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
     var formatter:DateFormatter?
     @IBOutlet var tableView: UITableView!
     @IBOutlet var dateLabel: UILabel!
+    var delegate:NotifDelegate? = nil
+
     
     
-    var asgnmntList: [Assignment] = [Assignment("Project Checkin 1", dueBy: nil, details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: nil, details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: nil, details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: nil, details: "Merged and ready 2 go", status: .inPrgrs)]
+//    var asgnmntList: [Assignment] = [Assignment("Project Checkin 1", dueBy: Date(), details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: Date(), details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: Date(), details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: Date(), details: "Merged and ready 2 go", status: .inPrgrs)]
+    var asgnmntList: [Assignment] = []
     
     //  Protocol to update table when new assignment is created
     func userDidEnterNewAsgnmnt(assignment: Assignment) {
@@ -25,16 +28,14 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
         tableView.insertRows(at: [newIndexPath], with: .fade)
         tableView.reloadData()
         tableView.endUpdates()
+        //push assignment into a user's unsortedassignmentlist
     }
     //  Protocol to get user selected date
     func userDidEnterNewDate(date: Date) {
-        print("YSER DID ENTER DATE")
-        print(date)
         self.dateLabel.text = formatter?.string(from: date)
-        
+        currentDate = date
+        print(currentDate?.formatted() as Any)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
         formatter = DateFormatter()
         formatter?.dateFormat = "MM/dd"
         dateLabel.text = formatter?.string(from: currentDate!)
+        tableView.reloadData()
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -79,9 +81,24 @@ extension ToDoViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        if asgnmntList[indexPath.row].getDueDate() == currentDate {
-            cell.textLabel?.text = asgnmntList[indexPath.row].getName()
-//        } else {}
+        
+        let order = Calendar.current.compare(asgnmntList[indexPath.row].getDueDate()!, to: currentDate!, toGranularity: .day)
+        
+        switch order {
+            case .orderedAscending:
+                print("date is after")
+                break
+            case .orderedDescending:
+                print("date is before")
+                break
+            case .orderedSame:
+                print("date is equal")
+                cell.textLabel?.text = asgnmntList[indexPath.row].getName()
+                break
+            default:
+                print("unknown")
+                break
+        }
         
         return cell
     }
@@ -98,4 +115,8 @@ extension ToDoViewController: UITableViewDataSource {
     }
     
     
+}
+
+protocol NotifDelegate {
+    func getAssignmentList(list:[Assignment]) -> [Assignment]
 }
