@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     // var loginObj = LoginPage(email: testEmail, password: testPassword)
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if usernameTextField.text == "student@csu.fullerton.edu", passwordTextField.text == "student", identifier == "login" {
+//        if usernameTextField.text == "student@csu.fullerton.edu", passwordTextField.text == "student", identifier == "login" {
+        if usernameTextField.text == "", passwordTextField.text == "", identifier == "login" {
             return true
         } else if identifier == "signup" {
             return true

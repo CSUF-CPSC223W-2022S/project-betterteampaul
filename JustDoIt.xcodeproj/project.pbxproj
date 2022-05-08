@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
-		499E4BE8282361C70000FFE4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E4BE7282361C70000FFE4 /* SignUpViewController.swift */; };
-		49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
-		7AB0165327FEA92F00D1164C /* OldNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0165227FEA92F00D1164C /* OldNotifications.swift */; };
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
 		9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */; };
 		9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
@@ -20,7 +17,6 @@
 		9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */; };
 		9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */; };
 		9D9FAC0C27C43C2600D911A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FAC0B27C43C2600D911A4 /* .gitignore */; };
-		9DD3B0D1281E139D00C75368 /* EditAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */; };
 		9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* CalendarVC.swift */; };
 		9DE090F127FE480400A858A3 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
 		9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F227FE481300A858A3 /* TodoListViewController.swift */; };
@@ -32,6 +28,8 @@
 		9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FD27FE482400A858A3 /* NotificationSetting.swift */; };
 		9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
 		9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
+		9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */; };
+		9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +51,7 @@
 
 /* Begin PBXFileReference section */
 		49737E5627C47CE80053CC29 /* login_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_page.swift; sourceTree = "<group>"; };
-		499E4BE7282361C70000FFE4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		49B0710227D9DD6B00EA930C /* LoginPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageTests.swift; sourceTree = "<group>"; };
-		7AB0165227FEA92F00D1164C /* OldNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNotifications.swift; sourceTree = "<group>"; };
 		9D9FABD627C43A4600D911A4 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABD927C43A4600D911A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +65,6 @@
 		9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITests.swift; sourceTree = "<group>"; };
 		9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDoItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D9FAC0B27C43C2600D911A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAssignmentViewController.swift; sourceTree = "<group>"; };
 		9DE090EE27FE480300A858A3 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarStry.storyboard; sourceTree = "<group>"; };
 		9DE090F227FE481300A858A3 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +75,7 @@
 		9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDisplay.swift; sourceTree = "<group>"; };
 		9DE090FD27FE482400A858A3 /* NotificationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetting.swift; sourceTree = "<group>"; };
 		9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
+		9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +133,8 @@
 				9D9FABD927C43A4600D911A4 /* AppDelegate.swift */,
 				9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */,
 				9D9FABDD27C43A4600D911A4 /* ViewController.swift */,
-				499E4BE7282361C70000FFE4 /* SignUpViewController.swift */,
 				9D9FABDF27C43A4600D911A4 /* Main.storyboard */,
+				9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */,
 				9D9FABE227C43A4800D911A4 /* Assets.xcassets */,
 				9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */,
 				9D9FABE727C43A4800D911A4 /* Info.plist */,
@@ -150,7 +146,6 @@
 		9D9FABEF27C43A4800D911A4 /* JustDoItTests */ = {
 			isa = PBXGroup;
 			children = (
-				49B0710227D9DD6B00EA930C /* LoginPageTests.swift */,
 			);
 			path = JustDoItTests;
 			sourceTree = "<group>";
@@ -158,6 +153,7 @@
 		9D9FABF927C43A4800D911A4 /* JustDoItUITests */ = {
 			isa = PBXGroup;
 			children = (
+				49B0710227D9DD6B00EA930C /* LoginPageTests.swift */,
 				9D9FABFA27C43A4800D911A4 /* JustDoItUITests.swift */,
 				9D9FABFC27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift */,
 			);
@@ -170,7 +166,6 @@
 				9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */,
 				9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */,
 				9DE090FA27FE482400A858A3 /* Notifications.swift */,
-				7AB0165227FEA92F00D1164C /* OldNotifications.swift */,
 				9DE090FD27FE482400A858A3 /* NotificationSetting.swift */,
 			);
 			path = Notifications;
@@ -183,7 +178,6 @@
 				9DE090F427FE481300A858A3 /* TodoList.storyboard */,
 				9DE090F227FE481300A858A3 /* TodoListViewController.swift */,
 				9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */,
-				9DD3B0D0281E139D00C75368 /* EditAssignmentViewController.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -213,8 +207,6 @@
 			dependencies = (
 			);
 			name = JustDoIt;
-			packageProductDependencies = (
-			);
 			productName = JustDoIt;
 			productReference = 9D9FABD627C43A4600D911A4 /* JustDoIt.app */;
 			productType = "com.apple.product-type.application";
@@ -287,8 +279,6 @@
 				Base,
 			);
 			mainGroup = 9D9FABCD27C43A4600D911A4;
-			packageReferences = (
-			);
 			productRefGroup = 9D9FABD727C43A4600D911A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,14 +332,8 @@
 				49737E5727C47CE80053CC29 /* login_page.swift in Sources */,
 				9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */,
 				9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */,
+				9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */,
 				9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */,
- login_page
-				499E4BE8282361C70000FFE4 /* SignUpViewController.swift in Sources */,
-        Notifications
-				7AB0165327FEA92F00D1164C /* OldNotifications.swift in Sources */,
-main
-				9DD3B0D1281E139D00C75368 /* EditAssignmentViewController.swift in Sources */,
-        main
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
 				9DE090F927FE481300A858A3 /* Assignment.swift in Sources */,
 				9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */,
@@ -361,7 +345,6 @@ main
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B0710327D9DD6B00EA930C /* LoginPageTests.swift in Sources */,
 				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +354,7 @@ main
 			buildActionMask = 2147483647;
 			files = (
 				9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */,
+				9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */,
 				9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,17 +17,19 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
 
     
     
-//    var asgnmntList: [Assignment] = [Assignment("Project Checkin 1", dueBy: Date(), details: "Create Structures", status: .finished), Assignment("Project Checkin 2", dueBy: Date(), details: nil, status: .finished), Assignment("Project Checkin 3", dueBy: Date(), details: "Working UI", status: .finished), Assignment("Project Checkin 4", dueBy: Date(), details: "Merged and ready 2 go", status: .inPrgrs)]
+    var unsortedAsgnmntList: [Assignment]=[]
     var asgnmntList: [Assignment] = []
     
     //  Protocol to update table when new assignment is created
     func userDidEnterNewAsgnmnt(assignment: Assignment) {
-        let newIndexPath = IndexPath(row: asgnmntList.count, section: 0)
-        tableView.beginUpdates()
-        asgnmntList.append(assignment)
-        tableView.insertRows(at: [newIndexPath], with: .fade)
-        tableView.reloadData()
-        tableView.endUpdates()
+//        let newIndexPath = IndexPath(row: asgnmntList.count, section: 0)
+//        tableView.beginUpdates()
+        unsortedAsgnmntList.append(assignment)
+        print(unsortedAsgnmntList)
+        reloadList()
+//        tableView.insertRows(at: [newIndexPath], with: .fade)
+//        tableView.reloadData()
+//        tableView.endUpdates()
         //push assignment into a user's unsortedassignmentlist
     }
     //  Protocol to get user selected date
@@ -35,8 +37,39 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
         self.dateLabel.text = formatter?.string(from: date)
         currentDate = date
         print(currentDate?.formatted() as Any)
+        reloadList()
+    }
+    func reloadList() {
+        asgnmntList.removeAll()
+        for asgnmnt in unsortedAsgnmntList {
+            let order = Calendar.current.compare(asgnmnt.getDueDate()!, to: currentDate!, toGranularity: .day)
+            
+                switch order {
+                case .orderedAscending:
+                    print("date is after")
+                    break
+                case .orderedDescending:
+                    print("date is before")
+                    break
+                case .orderedSame:
+                    print("date is equal")
+                    asgnmntList.append(asgnmnt)
+                    break
+                default:
+                    print("contact developer")
+                    break
+                }
+        }
+        tableView.reloadData()
     }
     
+    func initList() {
+        unsortedAsgnmntList.append(Assignment("Project Checkin 1", dueBy: Date(), details: "Create Structures", status: .finished))
+        unsortedAsgnmntList.append(Assignment("Project Checkin 2", dueBy: Date(), details: nil, status: .finished))
+        unsortedAsgnmntList.append(Assignment("Project Checkin 3", dueBy: Date(), details: "Working UI", status: .finished))
+        unsortedAsgnmntList.append(Assignment("Project Checkin 4", dueBy: Date(), details: "Merged and ready 2 go", status: .inPrgrs))
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -46,7 +79,11 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
         formatter = DateFormatter()
         formatter?.dateFormat = "MM/dd"
         dateLabel.text = formatter?.string(from: currentDate!)
-        tableView.reloadData()
+        if unsortedAsgnmntList.count == 0 {
+            print("Initializing List")
+            initList()
+        }
+        reloadList()
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,25 +118,7 @@ extension ToDoViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let order = Calendar.current.compare(asgnmntList[indexPath.row].getDueDate()!, to: currentDate!, toGranularity: .day)
-        
-        switch order {
-            case .orderedAscending:
-                print("date is after")
-                break
-            case .orderedDescending:
-                print("date is before")
-                break
-            case .orderedSame:
-                print("date is equal")
-                cell.textLabel?.text = asgnmntList[indexPath.row].getName()
-                break
-            default:
-                print("unknown")
-                break
-        }
-        
+        cell.textLabel?.text = asgnmntList[indexPath.row].getName()
         return cell
     }
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {

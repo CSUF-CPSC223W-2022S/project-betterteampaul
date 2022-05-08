@@ -13,7 +13,11 @@ enum Status {
     case finished
 }
 
-class Assignment{
+class Assignment : Equatable {
+    static func == (lhs: Assignment, rhs: Assignment) -> Bool {
+        return lhs.getName() == rhs.getName()
+    }
+    
     init (_ _name: String,dueBy _dueDate: Date?,details _details: String?,status _status: Status?) {
         name = _name
         details = _details
