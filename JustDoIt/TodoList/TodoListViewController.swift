@@ -25,7 +25,6 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
 //        let newIndexPath = IndexPath(row: asgnmntList.count, section: 0)
 //        tableView.beginUpdates()
         unsortedAsgnmntList.append(assignment)
-        print(unsortedAsgnmntList)
         reloadList()
 //        tableView.insertRows(at: [newIndexPath], with: .fade)
 //        tableView.reloadData()
@@ -36,7 +35,6 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
     func userDidEnterNewDate(date: Date) {
         self.dateLabel.text = formatter?.string(from: date)
         currentDate = date
-        print(currentDate?.formatted() as Any)
         reloadList()
     }
     func reloadList() {
@@ -46,13 +44,10 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
             
                 switch order {
                 case .orderedAscending:
-                    print("date is after")
                     break
                 case .orderedDescending:
-                    print("date is before")
                     break
                 case .orderedSame:
-                    print("date is equal")
                     asgnmntList.append(asgnmnt)
                     break
                 default:
@@ -80,7 +75,6 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
         formatter?.dateFormat = "MM/dd"
         dateLabel.text = formatter?.string(from: currentDate!)
         if unsortedAsgnmntList.count == 0 {
-            print("Initializing List")
             initList()
         }
         reloadList()
@@ -108,7 +102,6 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
 
 extension ToDoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you tapped me!")
     }
 }
 
@@ -127,6 +120,9 @@ extension ToDoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             tableView.beginUpdates()
+            if let index = unsortedAsgnmntList.firstIndex(where: { $0 == asgnmntList[indexPath.row]}) {
+                unsortedAsgnmntList.remove(at: index)
+            }
             asgnmntList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
