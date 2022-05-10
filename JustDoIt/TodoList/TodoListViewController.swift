@@ -22,14 +22,9 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
     
     //  Protocol to update table when new assignment is created
     func userDidEnterNewAsgnmnt(assignment: Assignment) {
-//        let newIndexPath = IndexPath(row: asgnmntList.count, section: 0)
-//        tableView.beginUpdates()
         unsortedAsgnmntList.append(assignment)
         reloadList()
-//        tableView.insertRows(at: [newIndexPath], with: .fade)
-//        tableView.reloadData()
-//        tableView.endUpdates()
-        //push assignment into a user's unsortedassignmentlist
+
     }
     //  Protocol to get user selected date
     func userDidEnterNewDate(date: Date) {
@@ -59,10 +54,10 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
     }
     
     func initList() {
-        unsortedAsgnmntList.append(Assignment("Project Checkin 1", dueBy: Date(), details: "Create Structures", status: .finished))
-        unsortedAsgnmntList.append(Assignment("Project Checkin 2", dueBy: Date(), details: nil, status: .finished))
-        unsortedAsgnmntList.append(Assignment("Project Checkin 3", dueBy: Date(), details: "Working UI", status: .finished))
-        unsortedAsgnmntList.append(Assignment("Project Checkin 4", dueBy: Date(), details: "Merged and ready 2 go", status: .inPrgrs))
+        unsortedAsgnmntList.append(Assignment("Swift Project Presentation", dueBy: Date(), details: "Create Structures", status: .finished))
+        unsortedAsgnmntList.append(Assignment("9.2 Parametric Equations Quiz", dueBy: Date(), details: nil, status: .finished))
+        unsortedAsgnmntList.append(Assignment("Club Meeting", dueBy: Date(), details: "Working UI", status: .finished))
+
 
     }
     override func viewDidLoad() {

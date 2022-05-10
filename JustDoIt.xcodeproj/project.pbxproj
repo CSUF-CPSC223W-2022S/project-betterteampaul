@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
+		7AA05300282AC0BB00D8831C /* OldNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA052FF282AC0BB00D8831C /* OldNotifications.swift */; };
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
 		9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */; };
 		9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		49737E5627C47CE80053CC29 /* login_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_page.swift; sourceTree = "<group>"; };
 		49B0710227D9DD6B00EA930C /* LoginPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageTests.swift; sourceTree = "<group>"; };
+		7AA052FF282AC0BB00D8831C /* OldNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNotifications.swift; sourceTree = "<group>"; };
 		9D9FABD627C43A4600D911A4 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABD927C43A4600D911A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */,
 				9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */,
 				9DE090FA27FE482400A858A3 /* Notifications.swift */,
+				7AA052FF282AC0BB00D8831C /* OldNotifications.swift */,
 				9DE090FD27FE482400A858A3 /* NotificationSetting.swift */,
 			);
 			path = Notifications;
@@ -330,6 +333,7 @@
 				9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */,
 				9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
 				49737E5727C47CE80053CC29 /* login_page.swift in Sources */,
+				7AA05300282AC0BB00D8831C /* OldNotifications.swift in Sources */,
 				9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */,
 				9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */,
 				9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */,
