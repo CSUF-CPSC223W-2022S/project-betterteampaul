@@ -10,18 +10,8 @@ import UserNotifications
 
 
 var message = Notifications()
-class NotificationDisplay: UIViewController, NotifDelegate {
-    func getAssignmentList(list:[Assignment]) -> [Assignment] {
-        return list
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Notifications" {
-            let toDoVC = segue.destination as! ToDoViewController
-            toDoVC.delegate = self
-        }
-    }
-    
+class NotificationDisplay: UIViewController {
+    var asgnmntList: [Assignment]?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

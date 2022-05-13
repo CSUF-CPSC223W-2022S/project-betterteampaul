@@ -64,7 +64,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRt-Zt-0k6" sceneMemberID="firstResponder"/>
                 <exit id="jdm-KN-AwI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="908.69565217391312" y="67.633928571428569"/>
+            <point key="canvasLocation" x="1032" y="56"/>
         </scene>
         <!--NotificationSetting-->
         <scene sceneID="JQq-hq-p8V">

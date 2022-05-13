@@ -13,7 +13,6 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
     var formatter:DateFormatter?
     @IBOutlet var tableView: UITableView!
     @IBOutlet var dateLabel: UILabel!
-    var delegate:NotifDelegate? = nil
 
     
     
@@ -84,6 +83,10 @@ class ToDoViewController: UIViewController, DataEnteredDelegate, CalendarDelegat
             let calendarVC:CalendarVC = segue.destination as! CalendarVC
             calendarVC.delegate = self
         }
+        if segue.identifier == "Notifications" {
+            let NotifVC:NotificationDisplay = segue.destination as! NotificationDisplay
+            NotifVC.asgnmntList = unsortedAsgnmntList
+        }
     }
 
     
@@ -125,8 +128,4 @@ extension ToDoViewController: UITableViewDataSource {
     }
     
     
-}
-
-protocol NotifDelegate {
-    func getAssignmentList(list:[Assignment]) -> [Assignment]
 }
