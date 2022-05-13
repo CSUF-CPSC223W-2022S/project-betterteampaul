@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnC-fc-zvU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="141"/>
+            <point key="canvasLocation" x="18.840579710144929" y="140.625"/>
         </scene>
         <!--NotificationPages-->
         <scene sceneID="nsp-al-0ui">
