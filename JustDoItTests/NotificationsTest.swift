@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import JustDoIt
 
 class NotificationsTest: XCTestCase {
 
@@ -38,7 +37,7 @@ class NotificationsTest: XCTestCase {
     }
     
     //function ensures that the message printed out and returned by the pushNotification function was a string found in the array
-    // that contains all possible messages 
+    // that contains all possible messages
     func testPushNotificationFunc() {
         var notifObject = Notifications()
         notifObject.selectMessage()

@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
 		7AA05300282AC0BB00D8831C /* OldNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA052FF282AC0BB00D8831C /* OldNotifications.swift */; };
-<<<<<<< HEAD
-=======
-		7ABE5E62282F3B3800F7D7EE /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE5E61282F3B3800F7D7EE /* Assignment.swift */; };
-		7ABE5E64282F3D1900F7D7EE /* NotificationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE5E63282F3D1900F7D7EE /* NotificationsTest.swift */; };
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
 		9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */; };
 		9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
@@ -27,16 +22,20 @@
 		9DE090F127FE480400A858A3 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
 		9DE090F627FE481300A858A3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F227FE481300A858A3 /* TodoListViewController.swift */; };
 		9DE090F827FE481300A858A3 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090F427FE481300A858A3 /* TodoList.storyboard */; };
-<<<<<<< HEAD
 		9DE090F927FE481300A858A3 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F527FE481300A858A3 /* Assignment.swift */; };
-=======
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 		9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FA27FE482400A858A3 /* Notifications.swift */; };
 		9DE090FF27FE482400A858A3 /* NotificationPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */; };
 		9DE0910027FE482400A858A3 /* NotificationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */; };
 		9DE0910127FE482400A858A3 /* NotificationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FD27FE482400A858A3 /* NotificationSetting.swift */; };
 		9DE0910D27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
-		9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
+		9DE3CC3F282F551800ABAD9F /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
+		9DE3CC41282F552500ABAD9F /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F527FE481300A858A3 /* Assignment.swift */; };
+		9DE3CC42282F553300ABAD9F /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
+		9DE3CC4F282F582300ABAD9F /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3CC44282F55E100ABAD9F /* ToDoListTests.swift */; };
+		9DE3CC53282F596C00ABAD9F /* NotificationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3CC43282F55E100ABAD9F /* NotificationsTest.swift */; };
+		9DE3CC54282F597200ABAD9F /* JustDoItCalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3CC45282F55E100ABAD9F /* JustDoItCalenderTests.swift */; };
+		9DE3CC55282F598100ABAD9F /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090EE27FE480300A858A3 /* CalendarVC.swift */; };
+		9DE3CC56282F598500ABAD9F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090FA27FE482400A858A3 /* Notifications.swift */; };
 		9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */; };
 		9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
 /* End PBXBuildFile section */
@@ -62,11 +61,6 @@
 		49737E5627C47CE80053CC29 /* login_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_page.swift; sourceTree = "<group>"; };
 		49B0710227D9DD6B00EA930C /* LoginPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageTests.swift; sourceTree = "<group>"; };
 		7AA052FF282AC0BB00D8831C /* OldNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNotifications.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		7ABE5E61282F3B3800F7D7EE /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
-		7ABE5E63282F3D1900F7D7EE /* NotificationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsTest.swift; path = JustDoItTests/NotificationsTest.swift; sourceTree = SOURCE_ROOT; };
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 		9D9FABD627C43A4600D911A4 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9FABD927C43A4600D911A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,15 +78,15 @@
 		9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarStry.storyboard; sourceTree = "<group>"; };
 		9DE090F227FE481300A858A3 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		9DE090F427FE481300A858A3 /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		9DE090F527FE481300A858A3 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
-=======
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 		9DE090FA27FE482400A858A3 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationPages.storyboard; sourceTree = "<group>"; };
 		9DE090FC27FE482400A858A3 /* NotificationDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDisplay.swift; sourceTree = "<group>"; };
 		9DE090FD27FE482400A858A3 /* NotificationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetting.swift; sourceTree = "<group>"; };
 		9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
+		9DE3CC43282F55E100ABAD9F /* NotificationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTest.swift; sourceTree = "<group>"; };
+		9DE3CC44282F55E100ABAD9F /* ToDoListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
+		9DE3CC45282F55E100ABAD9F /* JustDoItCalenderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustDoItCalenderTests.swift; sourceTree = "<group>"; };
 		9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,10 +158,9 @@
 		9D9FABEF27C43A4800D911A4 /* JustDoItTests */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
-				7ABE5E63282F3D1900F7D7EE /* NotificationsTest.swift */,
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
+				9DE3CC45282F55E100ABAD9F /* JustDoItCalenderTests.swift */,
+				9DE3CC43282F55E100ABAD9F /* NotificationsTest.swift */,
+				9DE3CC44282F55E100ABAD9F /* ToDoListTests.swift */,
 			);
 			path = JustDoItTests;
 			sourceTree = "<group>";
@@ -197,17 +190,10 @@
 		9DE090EC27FE475400A858A3 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				9DE090F527FE481300A858A3 /* Assignment.swift */,
 				9DE090F427FE481300A858A3 /* TodoList.storyboard */,
 				9DE090F227FE481300A858A3 /* TodoListViewController.swift */,
 				9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */,
-=======
-				9DE090F427FE481300A858A3 /* TodoList.storyboard */,
-				9DE090F227FE481300A858A3 /* TodoListViewController.swift */,
-				9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */,
-				7ABE5E61282F3B3800F7D7EE /* Assignment.swift */,
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -366,11 +352,7 @@
 				9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */,
 				9DE090FE27FE482400A858A3 /* Notifications.swift in Sources */,
 				9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				9DE090F927FE481300A858A3 /* Assignment.swift in Sources */,
-=======
-				7ABE5E62282F3B3800F7D7EE /* Assignment.swift in Sources */,
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
 				9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */,
 				9DE090F027FE480400A858A3 /* CalendarVC.swift in Sources */,
 			);
@@ -380,11 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-=======
-				7ABE5E64282F3D1900F7D7EE /* NotificationsTest.swift in Sources */,
->>>>>>> parent of 2a79a68 (Delete JustDoIt.xcodeproj directory)
-				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
+				9DE3CC53282F596C00ABAD9F /* NotificationsTest.swift in Sources */,
+				9DE3CC56282F598500ABAD9F /* Notifications.swift in Sources */,
+				9DE3CC41282F552500ABAD9F /* Assignment.swift in Sources */,
+				9DE3CC55282F598100ABAD9F /* CalendarVC.swift in Sources */,
+				9DE3CC3F282F551800ABAD9F /* AddAssignmentViewController.swift in Sources */,
+				9DE3CC54282F597200ABAD9F /* JustDoItCalenderTests.swift in Sources */,
+				9DE3CC4F282F582300ABAD9F /* ToDoListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE3CC42282F553300ABAD9F /* login_page.swift in Sources */,
 				9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */,
 				9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */,
 				9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */,
@@ -562,6 +547,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,6 +576,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
