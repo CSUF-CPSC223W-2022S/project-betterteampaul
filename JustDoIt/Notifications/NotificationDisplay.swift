@@ -20,7 +20,7 @@ class NotificationDisplay: UIViewController {
         
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
         }
-        for task in asgnmntList! {
+        
         let content = UNMutableNotificationContent()
         message.selectMessage()
         message.appendAssignmentToMessage()
@@ -29,21 +29,17 @@ class NotificationDisplay: UIViewController {
         content.title = "Just Do It"
         content.body = message.pushMessage
         
-        var date = task.dueDate
-        date = date?.addingTimeInterval(5)
+        let date = Date().addingTimeInterval(5)
         
-        let dateComponents = Foundation.Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date!)
+        let dateComponents = Foundation.Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         let uuidString = UUID().uuidString
         
         let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-            
+        
         center.add(request) { (error) in }
-            
-        }
     }
-
     
     
 
