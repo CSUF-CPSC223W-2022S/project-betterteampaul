@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		49737E5727C47CE80053CC29 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
 		7AA05300282AC0BB00D8831C /* OldNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA052FF282AC0BB00D8831C /* OldNotifications.swift */; };
+		9D192FBD282F4188007F44B2 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE090F527FE481300A858A3 /* Assignment.swift */; };
+		9D192FC1282F4247007F44B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9FABE427C43A4800D911A4 /* LaunchScreen.storyboard */; };
+		9D192FC2282F4250007F44B2 /* NotificationPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090FB27FE482400A858A3 /* NotificationPages.storyboard */; };
+		9D192FC3282F4257007F44B2 /* CalendarStry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE090EF27FE480300A858A3 /* CalendarStry.storyboard */; };
+		9D192FC4282F4263007F44B2 /* login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49737E5627C47CE80053CC29 /* login_page.swift */; };
+		9D192FC5282F426F007F44B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */; };
+		9D192FC6282F4274007F44B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
 		9D9FABDA27C43A4600D911A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABD927C43A4600D911A4 /* AppDelegate.swift */; };
 		9D9FABDC27C43A4600D911A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDB27C43A4600D911A4 /* SceneDelegate.swift */; };
 		9D9FABDE27C43A4600D911A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FABDD27C43A4600D911A4 /* ViewController.swift */; };
@@ -31,6 +38,9 @@
 		9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */; };
 		9DED6D5028285FDA00F9C3CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */; };
 		9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0710227D9DD6B00EA930C /* LoginPageTests.swift */; };
+		9DF255A3282F3DCE003EE9DD /* NotificationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF255A0282F3DCE003EE9DD /* NotificationsTest.swift */; };
+		9DF255A4282F3DCE003EE9DD /* JustDoItCalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF255A1282F3DCE003EE9DD /* JustDoItCalenderTests.swift */; };
+		9DF255A5282F3DCE003EE9DD /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF255A2282F3DCE003EE9DD /* ToDoListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +88,9 @@
 		9DE090FD27FE482400A858A3 /* NotificationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSetting.swift; sourceTree = "<group>"; };
 		9DE0910C27FE834900A858A3 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
 		9DED6D4F28285FDA00F9C3CE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9DF255A0282F3DCE003EE9DD /* NotificationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTest.swift; sourceTree = "<group>"; };
+		9DF255A1282F3DCE003EE9DD /* JustDoItCalenderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustDoItCalenderTests.swift; sourceTree = "<group>"; };
+		9DF255A2282F3DCE003EE9DD /* ToDoListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +161,9 @@
 		9D9FABEF27C43A4800D911A4 /* JustDoItTests */ = {
 			isa = PBXGroup;
 			children = (
+				9DF255A1282F3DCE003EE9DD /* JustDoItCalenderTests.swift */,
+				9DF255A0282F3DCE003EE9DD /* NotificationsTest.swift */,
+				9DF255A2282F3DCE003EE9DD /* ToDoListTests.swift */,
 			);
 			path = JustDoItTests;
 			sourceTree = "<group>";
@@ -312,6 +328,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D192FC3282F4257007F44B2 /* CalendarStry.storyboard in Resources */,
+				9D192FC2282F4250007F44B2 /* NotificationPages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D192FC1282F4247007F44B2 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF255A3282F3DCE003EE9DD /* NotificationsTest.swift in Sources */,
+				9DF255A4282F3DCE003EE9DD /* JustDoItCalenderTests.swift in Sources */,
 				9DE0910E27FE834900A858A3 /* AddAssignmentViewController.swift in Sources */,
+				9D192FBD282F4188007F44B2 /* Assignment.swift in Sources */,
+				9DF255A5282F3DCE003EE9DD /* ToDoListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D192FC6282F4274007F44B2 /* ViewController.swift in Sources */,
+				9D192FC4282F4263007F44B2 /* login_page.swift in Sources */,
 				9D9FABFD27C43A4800D911A4 /* JustDoItUITestsLaunchTests.swift in Sources */,
 				9DED6D522828641500F9C3CE /* LoginPageTests.swift in Sources */,
 				9D9FABFB27C43A4800D911A4 /* JustDoItUITests.swift in Sources */,
+				9D192FC5282F426F007F44B2 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
